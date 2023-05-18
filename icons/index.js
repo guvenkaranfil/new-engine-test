@@ -23,6 +23,7 @@ export {default as Pixel} from './Pixel';
 export {default as Plus} from './Plus';
 export {default as Point} from './Point';
 export {default as Receipt} from './Receipt';
+export {default as Search} from './Search';
 export {default as Send} from './Send';
 export {default as Star} from './Star';
 export {default as Time} from './Time';

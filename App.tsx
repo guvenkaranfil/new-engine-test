@@ -1,13 +1,15 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import React, { useState } from 'react'
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+
 
 
 const Stack = createNativeStackNavigator();
+const Tab = createBottomTabNavigator();
 
-import Home from './app/screens/Home';
-import Login from './app/screens/Login';
+
 import Dashboard from './app/screens/Dashboard';
 
 import GettingStarted from './app/screens/auth/GettingStarted';
@@ -17,24 +19,125 @@ import SignIn from './app/screens/auth/SignIn';
 import SignUp from './app/screens/auth/SignUp';
 import ApproveCode from './app/screens/auth/ApproveCode';
 
+import { LogBox } from 'react-native';
+import { Chat, Home, Patient, Plus, Receipt } from './icons';
+import Doctors from './app/screens/Doctors';
+import DoctorDetail from './app/screens/DoctorDetail';
+
+//Ignore all log notifications
+LogBox.ignoreAllLogs();
+
+const ICONS = [
+  <Home width={25} height={25} />,
+  <Receipt width={25} height={25} />,
+  null,
+  <Chat width={25} height={25} />,
+  <Patient width={25} height={25} fill='#000' />,
+]
+function MyTabBar({ state, descriptors, navigation }) {
+  return (
+    <View style={{
+      flexDirection: 'row', height: 90, borderTopLeftRadius: 32, borderTopRightRadius: 32, backgroundColor: 'white', shadowColor: "#000",
+      shadowOffset: {
+        width: 0,
+        height: 2,
+      },
+      shadowOpacity: 0.25,
+      shadowRadius: 3.84,
+
+      elevation: 5,
+    }}>
+      {state.routes.map((route, index) => {
+        const { options } = descriptors[route.key];
+        const label =
+          options.tabBarLabel !== undefined
+            ? options.tabBarLabel
+            : options.title !== undefined
+              ? options.title
+              : route.name;
+
+        const isFocused = state.index === index;
+
+        const onPress = () => {
+          const event = navigation.emit({
+            type: 'tabPress',
+            target: route.key,
+            canPreventDefault: true,
+          });
+
+          if (!isFocused && !event.defaultPrevented) {
+            // The `merge: true` option makes sure that the params inside the tab screen are preserved
+            navigation.navigate({ name: route.name, merge: true });
+          }
+        };
+
+        const onLongPress = () => {
+          navigation.emit({
+            type: 'tabLongPress',
+            target: route.key,
+          });
+        };
+
+        return (
+          <TouchableOpacity
+            accessibilityRole="button"
+            accessibilityState={isFocused ? { selected: true } : {}}
+            accessibilityLabel={options.tabBarAccessibilityLabel}
+            testID={options.tabBarTestID}
+            onPress={onPress}
+            onLongPress={onLongPress}
+            style={{ flex: 1 }}
+          >
+            {route.name === 'dashboard3' ?
+              <View style={{ flex: 1, alignItems: 'center', paddingTop: 17 }}>
+                <View style={{ width: 44, height: 44, borderRadius: 22, backgroundColor: '#66CA98', alignItems: 'center', justifyContent: 'center' }}>
+                  <Plus fill='#fff' />
+                </View>
+              </View>
+              : <View style={{ flex: 1, alignItems: 'center', paddingTop: 28, opacity: isFocused ? 1 : 0.5 }}>
+                {ICONS[index]}
+              </View>}
+          </TouchableOpacity>
+        );
+      })}
+    </View>
+  );
+}
+
+
+const HomeStack = () => (
+  <Stack.Navigator>
+    <Stack.Screen options={{}} name="dashboard" component={Dashboard} />
+    <Stack.Screen options={{ headerShown: false }} name="doctors" component={Doctors} />
+    <Stack.Screen options={{ headerShown: false }} name="doctorDetail" component={DoctorDetail} />
+  </Stack.Navigator>
+)
 
 export default function App() {
+  const [isAuthCompleted, setisAuthCompleted] = useState(true)
+
   return (
     <View style={styles.container}>
       <NavigationContainer>
-        <Stack.Navigator>
-          <Stack.Screen options={{ headerShown: false }} name="gettingStarted" component={GettingStarted} />
-          <Stack.Screen options={{ headerShown: false }} name="pickUserType" component={PickUserType} />
-          <Stack.Screen options={{ headerShown: false }} name="aboutYourself" component={AboutYourself} />
-          <Stack.Screen options={{ headerShown: false }} name="signIn" component={SignIn} />
-          <Stack.Screen options={{ headerShown: false }} name="signUp" component={SignUp} />
-          <Stack.Screen options={{ headerShown: false }} name="approveCode" component={ApproveCode} />
+        {isAuthCompleted ?
 
+          <Tab.Navigator screenOptions={{ headerShown: false, tabBarStyle: { backgroundColor: 'transparent' } }} tabBar={props => <MyTabBar {...props} />}>
+            <Tab.Screen options={{}} name="dashboard" component={HomeStack} />
+            <Tab.Screen options={{}} name="dashboard2" component={Dashboard} />
+            <Tab.Screen options={{}} name="dashboard3" component={Dashboard} />
+            <Tab.Screen options={{}} name="dashboard4" component={Dashboard} />
+            <Tab.Screen options={{}} name="dashboard5" component={Dashboard} />
+          </Tab.Navigator>
+          :
+          <Stack.Navigator>
+            <Stack.Screen options={{ headerShown: false }} name="gettingStarted" component={GettingStarted} />
+            <Stack.Screen options={{ headerShown: false }} name="pickUserType" component={PickUserType} />
+            <Stack.Screen options={{ headerShown: false }} name="aboutYourself" component={AboutYourself} />
+            <Stack.Screen options={{ headerShown: false }} name="signIn" component={SignIn} />
+            <Stack.Screen options={{ headerShown: false }} name="signUp" component={SignUp} />
+            <Stack.Screen options={{ headerShown: false }} name="approveCode" component={() => <ApproveCode isAuthCompleted={setisAuthCompleted} />} />
 
-          <Stack.Screen name="dashboard" component={Dashboard} />
-          <Stack.Screen name="home" component={Home} />
-          <Stack.Screen name="login" component={Login} />
-        </Stack.Navigator>
+          </Stack.Navigator>}
       </NavigationContainer>
     </View>
   )
@@ -43,6 +146,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#F4F6F5'
   }
 })
 
@@ -1511,3 +1615,5 @@ const styles = StyleSheet.create({
 
 //   //   if (date == "02 Sep '22") clearInterval(a)
 //   // }, 1)
+
+

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { StyleSheet, Text, View, ActivityIndicator, TextInput, TouchableOpacity, Dimensions, ScrollView, Image } from 'react-native'
 
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { Calendar, Filter, Location, Notification, Search, Time } from '../../icons'
+import { ArrowLeft, Calendar, Filter, Location, Notification, Search, Time } from '../../icons'
 import Fonts from '../helpers/Fonts'
 
 const { width } = Dimensions.get('window')
@@ -19,7 +19,7 @@ const HASH_TAGS = [
 ]
 
 let recentDoctor;
-export default function Dashboard({ navigation }) {
+export default function Doctors({ navigation }) {
   const [doctors, setdoctors] = useState<[Doctor]>()
   const [isFetching, setisFetching] = useState(false)
 
@@ -51,13 +51,15 @@ export default function Dashboard({ navigation }) {
     <ScrollView style={styles.container} contentContainerStyle={{ paddingTop: 40 }}>
       <SafeAreaView style={styles.container}>
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: 26, }}>
-          <Text style={styles.title}>Welcome Back, Güven!</Text>
+          <TouchableOpacity style={{ flexDirection: 'row' }} onPress={() => navigation.goBack()}>
+            <ArrowLeft style={{ marginTop: 3 }} width={10} height={15} />
+            <Text style={{ paddingLeft: 10, fontSize: 16, fontFamily: Fonts.interMedium }}>Back</Text>
+          </TouchableOpacity>
           <Notification opacity={0.5} />
         </View>
-        <View style={{ flexDirection: 'row', marginTop: 4, paddingHorizontal: 26, }}>
-          <Location opacity={0.5} />
-          <Text style={styles.location}>Sakarya, Turkey</Text>
-        </View>
+
+        <Text style={styles.title}>Doctors</Text>
+
 
         <View style={{ flexDirection: 'row', marginTop: 26, paddingHorizontal: 26, }}>
           <View style={styles.search}>
@@ -85,59 +87,6 @@ export default function Dashboard({ navigation }) {
           </ScrollView>
         </View>
 
-        <View style={{ marginTop: 30, paddingHorizontal: 26, }}>
-          <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
-            <Text style={styles.recentLbl}>Recent</Text>
-            <Text style={styles.seeAllLbl}>See all</Text>
-          </View>
-        </View>
-
-        <View style={styles.recentCard}>
-          <View style={{ flexDirection: 'row', justifyContent: 'space-between', padding: 15 }}>
-            <View style={{ flexDirection: 'row' }}>
-              <Image source={{ uri: recentDoctor?.profile_photo }} style={styles.recentPhoto} />
-              <View style={{ paddingLeft: 4, paddingRight: 10, maxWidth: width / 2.5 }}>
-                <Text style={{ fontSize: 18, color: '#FFFFFF' }} numberOfLines={2}>Dr. {recentDoctor?.first_name} {recentDoctor?.last_name}</Text>
-                <Text style={{ fontSize: 12, color: '#E0EAF9' }}>{recentDoctor?.field}</Text>
-              </View>
-            </View>
-            <View style={{ flexDirection: 'row', marginRight: 15, paddingTop: 3, marginLeft: 30, }}>
-              <Text style={{ paddingRight: 5, textAlign: 'right', fontSize: 12, color: '#E0EAF9' }}>({recentDoctor?.review_count} reviews)</Text>
-              <Text style={{ fontSize: 14, color: '#FFFFFF' }}><Text style={{ color: '#F4A3EC' }}>★</Text> {recentDoctor?.rating}</Text>
-            </View>
-          </View>
-
-          <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginHorizontal: 15, marginBottom: 18 }}>
-            <View style={{ flexDirection: 'row' }}>
-              <View style={{ flexDirection: 'row' }}>
-                <Calendar />
-                <Text style={{ fontSize: 14, fontFamily: Fonts.interMedium, color: '#fff', textAlign: 'center', paddingTop: 3, paddingLeft: 7 }}>23 Mar</Text>
-              </View>
-
-              <View style={{ flexDirection: 'row', marginLeft: 24 }}>
-                <Time />
-                <Text style={{ fontSize: 14, fontFamily: Fonts.interMedium, color: '#fff', textAlign: 'center', paddingTop: 3, paddingLeft: 7 }}>23 Mar</Text>
-              </View>
-            </View>
-            <View style={{ flexDirection: 'row', marginLeft: 24 }}>
-              <Text style={{ fontSize: 14, fontFamily: Fonts.interSemiBold, color: '#fff', textAlign: 'center', paddingTop: 3, paddingLeft: 7 }}>$80</Text>
-            </View>
-          </View>
-        </View>
-
-        <View style={styles.bloodTest}>
-          <View style={{ position: 'absolute', width: width, height: 110, zIndex: 9999, right: 0, top: 0 }}>
-            <Image source={require('../assets/bloodRect.png')} style={{ flex: 1, width: undefined, height: undefined, resizeMode: 'cover' }} />
-          </View>
-
-          <Text style={{ fontSize: 18, fontFamily: Fonts.interSemiBold, color: '#fff' }}>Blood Test</Text>
-          <Text style={{ paddingTop: 3, fontSize: 12, fontFamily: Fonts.interMedium, color: '#fff' }}>Duis hendrerit ex nibh, non</Text>
-          <View style={{ flexDirection: 'row', marginTop: 14, }}>
-            <Calendar />
-            <Text style={{ fontSize: 14, fontFamily: Fonts.interMedium, color: '#fff', textAlign: 'center', paddingTop: 3, paddingLeft: 7 }}>23 Mar</Text>
-          </View>
-        </View>
-
         <View style={{ marginTop: 31 }}>
           <Text style={{ paddingHorizontal: 26, paddingBottom: 11, fontSize: 18, fontFamily: Fonts.interMedium, color: '#1C1F1E' }}>Categories</Text>
           <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} contentContainerStyle={{ paddingHorizontal: 26 }}>
@@ -157,13 +106,12 @@ export default function Dashboard({ navigation }) {
 
         <View style={{ marginTop: 30, paddingHorizontal: 26, }}>
           <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 16 }}>
-            <Text style={styles.recentLbl}>Popular Doctors</Text>
-            <Text onPress={() => navigation.navigate('doctors')} style={styles.seeAllLbl}>See all</Text>
+            <Text style={styles.recentLbl}>All</Text>
           </View>
 
 
-          {doctors?.slice(0, 5).map((doctor, index) => (
-            <TouchableOpacity onPress={() => navigation.navigate('doctorDetail', { doctor: doctor })}>
+          {doctors?.map((doctor, index) => (
+            <TouchableOpacity onPress={() => navigation.navigate('doctorDetail', { doctor: doctor })} key={index}>
               <View style={styles.doctorItem}>
                 <Image source={{ uri: doctor.profile_photo }} style={{ marginLeft: 10, width: 50, height: 50, resizeMode: 'contain' }} />
                 <View style={{ marginLeft: 15, }}>
@@ -174,6 +122,7 @@ export default function Dashboard({ navigation }) {
                   <Text style={{ paddingRight: 5, textAlign: 'right', fontSize: 12, color: '#CDCFCE' }}>({doctor?.review_count} reviews)</Text>
                   <Text style={{ fontSize: 14, color: '#000' }}><Text style={{ color: '#1C1F1E' }}>★</Text> {doctor?.rating}</Text>
                 </View>
+
               </View>
             </TouchableOpacity>
           ))}
@@ -196,6 +145,8 @@ const styles = StyleSheet.create({
   },
 
   title: {
+    paddingTop: 12,
+    paddingHorizontal: 26,
     fontSize: 28,
     fontFamily: Fonts.interSemiBold,
     color: '#1C1F1E'

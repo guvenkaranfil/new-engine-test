@@ -6,9 +6,10 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import Fonts from '../../helpers/Fonts'
 import { Check, Closed } from '../../../icons'
 
-export default function ApproveCode({ navigation }) {
+export default function ApproveCode({ navigation, isAuthCompleted }) {
   const onSubmitSignIn = () => {
-    navigation.navigate('dashboard')
+    // navigation.navigate('dashboard')
+    isAuthCompleted(true)
   }
 
   return (

@@ -9,9 +9,10 @@
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "convert-svg": "npx @svgr/cli -- icons/test.svg > icons/test.js",
-    "svgr": "svgr ./svgs -d ./icons --native --icon"
+    "svgr": "svgr ./svgs -d ./icons --native --icon - --ignore-existing"
   },
   "dependencies": {
+    "@react-navigation/bottom-tabs": "^6.5.7",
     "@react-navigation/native": "^6.1.6",
     "@react-navigation/native-stack": "^6.9.12",
     "@testing-library/jest-native": "^5.4.1",

@@ -9,7 +9,7 @@ const SvgArrowRight = props => (
     viewBox="0 0 9 14"
     {...props}>
     <Path
-      stroke="#1C1F1E"
+      stroke="#fff"
       strokeLinecap="round"
       strokeWidth={2}
       d="m2 13 5-6-5-6"

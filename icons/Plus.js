@@ -9,10 +9,10 @@ const SvgPlus = props => (
     viewBox="0 0 26 26"
     {...props}>
     <Path
-      stroke="#1C1F1E"
+      stroke="#fff"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={2}
+      strokeWidth={3}
       d="M13 4.245v17.51M21.755 13H4.245h17.51Z"
     />
   </Svg>
