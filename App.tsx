@@ -1,3 +1,52 @@
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+
+const Stack = createNativeStackNavigator();
+
+import Home from './app/screens/Home';
+import Login from './app/screens/Login';
+import Dashboard from './app/screens/Dashboard';
+
+import GettingStarted from './app/screens/auth/GettingStarted';
+import PickUserType from './app/screens/auth/PickUserType';
+import AboutYourself from './app/screens/auth/AboutYourself';
+import SignIn from './app/screens/auth/SignIn';
+import SignUp from './app/screens/auth/SignUp';
+import ApproveCode from './app/screens/auth/ApproveCode';
+
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen options={{ headerShown: false }} name="gettingStarted" component={GettingStarted} />
+          <Stack.Screen options={{ headerShown: false }} name="pickUserType" component={PickUserType} />
+          <Stack.Screen options={{ headerShown: false }} name="aboutYourself" component={AboutYourself} />
+          <Stack.Screen options={{ headerShown: false }} name="signIn" component={SignIn} />
+          <Stack.Screen options={{ headerShown: false }} name="signUp" component={SignUp} />
+          <Stack.Screen options={{ headerShown: false }} name="approveCode" component={ApproveCode} />
+
+
+          <Stack.Screen name="dashboard" component={Dashboard} />
+          <Stack.Screen name="home" component={Home} />
+          <Stack.Screen name="login" component={Login} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </View>
+  )
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  }
+})
+
+
 
 
 
