@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Image, View } from 'react-native'
+import { StyleSheet, Image, View, Text } from 'react-native'
 
 export default function AuthLogo() {
 	return (
@@ -23,3 +23,14 @@ const styles = StyleSheet.create({
 		height: 32,
 	},
 })
+
+
+class B extends React.Component {
+	render() {
+		return (
+			<View>
+				<Text>Hello</Text>
+			</View>
+		)
+	}
+}

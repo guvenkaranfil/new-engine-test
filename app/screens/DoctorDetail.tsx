@@ -55,7 +55,7 @@ export default function DoctorDetail({ navigation, route }) {
 
           <View style={{ width: 60, alignItems: 'flex-end', justifyContent: 'space-between', paddingBottom: 34, }}>
             <Elipses />
-            <Text style={{ fontSize: 28, fontFamily: Fonts.interSemiBold, color: '#1C1F1E' }}>$80</Text>
+            <Text style={{ fontSize: 28, fontFamily: Fonts.interSemiBold, color: '#1C1F1E' }}>$10</Text>
           </View>
         </View>
       </View>

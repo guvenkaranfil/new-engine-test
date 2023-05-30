@@ -31,7 +31,7 @@ const ICONS = [
   <Home width={25} height={25} />,
   <Receipt width={25} height={25} />,
   null,
-  <Chat width={25} height={25} />,
+  <Chat isActive={true} width={25} height={25} />,
   <Patient width={25} height={25} fill='#000' />,
 ]
 function MyTabBar({ state, descriptors, navigation }) {
@@ -105,43 +105,50 @@ function MyTabBar({ state, descriptors, navigation }) {
 }
 
 
+
+export default function App() {
+  const [isAuthCompleted, setisAuthCompleted] = useState(false)
+
+  return (
+    <View style={styles.container}>
+      <AppNavigator isAuthCompleted={isAuthCompleted} />
+    </View>
+  )
+}
+
 const HomeStack = () => (
-  <Stack.Navigator>
+  <Stack.Navigator screenOptions={{ headerShown: false }}>
     <Stack.Screen options={{}} name="dashboard" component={Dashboard} />
     <Stack.Screen options={{ headerShown: false }} name="doctors" component={Doctors} />
     <Stack.Screen options={{ headerShown: false }} name="doctorDetail" component={DoctorDetail} />
   </Stack.Navigator>
 )
 
-export default function App() {
-  const [isAuthCompleted, setisAuthCompleted] = useState(true)
+const AppNavigator = ({ isAuthCompleted }: { isAuthCompleted: boolean }) => (
+  <NavigationContainer>
+    {isAuthCompleted ?
 
-  return (
-    <View style={styles.container}>
-      <NavigationContainer>
-        {isAuthCompleted ?
+      <Tab.Navigator screenOptions={{ headerShown: false, tabBarStyle: { backgroundColor: 'transparent' } }} tabBar={props => <MyTabBar {...props} />}>
+        <Tab.Screen options={{}} name="dashboard" component={HomeStack} />
+        <Tab.Screen options={{}} name="dashboard2" component={Dashboard} />
+        <Tab.Screen options={{}} name="dashboard3" component={Dashboard} />
+        <Tab.Screen options={{}} name="dashboard4" component={Dashboard} />
+        <Tab.Screen options={{}} name="dashboard5" component={Dashboard} />
+      </Tab.Navigator>
+      :
 
-          <Tab.Navigator screenOptions={{ headerShown: false, tabBarStyle: { backgroundColor: 'transparent' } }} tabBar={props => <MyTabBar {...props} />}>
-            <Tab.Screen options={{}} name="dashboard" component={HomeStack} />
-            <Tab.Screen options={{}} name="dashboard2" component={Dashboard} />
-            <Tab.Screen options={{}} name="dashboard3" component={Dashboard} />
-            <Tab.Screen options={{}} name="dashboard4" component={Dashboard} />
-            <Tab.Screen options={{}} name="dashboard5" component={Dashboard} />
-          </Tab.Navigator>
-          :
-          <Stack.Navigator>
-            <Stack.Screen options={{ headerShown: false }} name="gettingStarted" component={GettingStarted} />
-            <Stack.Screen options={{ headerShown: false }} name="pickUserType" component={PickUserType} />
-            <Stack.Screen options={{ headerShown: false }} name="aboutYourself" component={AboutYourself} />
-            <Stack.Screen options={{ headerShown: false }} name="signIn" component={SignIn} />
-            <Stack.Screen options={{ headerShown: false }} name="signUp" component={SignUp} />
-            <Stack.Screen options={{ headerShown: false }} name="approveCode" component={() => <ApproveCode isAuthCompleted={setisAuthCompleted} />} />
+      <Stack.Navigator>
+        <Stack.Screen options={{ headerShown: false }} name="pickUserType" component={PickUserType} />
+        <Stack.Screen options={{ headerShown: false }} name="gettingStarted" component={GettingStarted} />
 
-          </Stack.Navigator>}
-      </NavigationContainer>
-    </View>
-  )
-}
+        <Stack.Screen options={{ headerShown: false }} name="aboutYourself" component={AboutYourself} />
+        <Stack.Screen options={{ headerShown: false }} name="signIn" component={SignIn} />
+        <Stack.Screen options={{ headerShown: false }} name="signUp" component={SignUp} />
+        <Stack.Screen options={{ headerShown: false }} name="approveCode" component={() => <ApproveCode isAuthCompleted={setisAuthCompleted} />} />
+
+      </Stack.Navigator>}
+  </NavigationContainer>
+)
 
 const styles = StyleSheet.create({
   container: {
