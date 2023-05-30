@@ -1,12 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React, { useState } from 'react'
 import UserTypeButtonDesign from '../../generated/components/UserTypeButtonDesign'
-import Fonts from '../../../../helpers/Fonts';
+import Fonts from '../../../helpers/Fonts';
 
 export interface IUserTypeButton {
   userType: 'patient' | 'doctor'
 }
 
+// Library Component
+// User file - Fully Editable
 export default function UserTypeButton(props: IUserTypeButton) {
   const [userType, setuserType] = useState<'patient' | 'doctor'>('patient');
 
@@ -26,6 +28,7 @@ export default function UserTypeButton(props: IUserTypeButton) {
   )
 }
 
+// Theme context'den bağlanmış olucak
 const Themes = StyleSheet.create({
   activeType: {
     backgroundColor: '#66CA98'

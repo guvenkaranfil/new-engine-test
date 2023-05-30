@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View, TouchableOpacity, TouchableOpacityProps, ViewProps, TextProps } from 'react-native'
-import { Patient } from '../../../../../icons'
-import Fonts from '../../../../helpers/Fonts'
+import { Patient } from '../../../../icons'
+import Fonts from '../../../helpers/Fonts'
 
 
 interface IUserTypeButtonDesign {

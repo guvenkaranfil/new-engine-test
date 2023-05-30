@@ -2,7 +2,7 @@ import React from 'react'
 import { Pressable, PressableProps, StyleSheet, Text, TextProps, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import UserTypeButton, { IUserTypeButton } from '../../scripts/components/UserTypeButton'
-import Fonts from '../../../../helpers/Fonts'
+import Fonts from '../../../helpers/Fonts'
 
 interface IPage1Design {
     userTypeButton1: IUserTypeButton
@@ -10,6 +10,8 @@ interface IPage1Design {
     text1Pros?: TextProps & { label: string }
 }
 
+// Page1 Generated Code
+// Not Editable
 const Page1Design = (props: IPage1Design) => (
     <SafeAreaView style={styles.container}>
         <View style={styles.infoContainer}>

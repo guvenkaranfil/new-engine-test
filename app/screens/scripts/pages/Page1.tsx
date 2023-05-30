@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
-import Page1Design from './generated/pages/Page1Design'
+import Page1Design from '../../generated/pages/Page1Design'
 
 
-export default function PickUserType({ }) {
+// Page1 User File
+// Fully Editable
+export default function Page1({ }) {
   const [userType, setuserType] = useState<'patient' | 'doctor'>('patient');
-
 
   return <Page1Design
     userTypeButton1={{
