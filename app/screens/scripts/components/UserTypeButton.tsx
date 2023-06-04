@@ -1,21 +1,20 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { GestureResponderEvent, PressableProps, StyleSheet, Text, View } from 'react-native'
 import React, { useState } from 'react'
 import UserTypeButtonDesign from '../../generated/components/UserTypeButtonDesign'
 import Fonts from '../../../helpers/Fonts';
 
 export interface IUserTypeButton {
-  userType: 'patient' | 'doctor'
+  userType: 'patient' | 'doctor',
+  userTypeButtonPress?: ((event: GestureResponderEvent) => void) | undefined;
 }
 
 // Library Component
 // User file - Fully Editable
 export default function UserTypeButton(props: IUserTypeButton) {
-  const [userType, setuserType] = useState<'patient' | 'doctor'>('patient');
-
   return (
     <UserTypeButtonDesign
       userTypeButton={{
-        onPress: () => setuserType('patient')
+        onPress: props.userTypeButtonPress
       }}
       view1Props={{
         style: [props.userType === 'patient' ? Themes.activeType : null, Themes.rectangle]

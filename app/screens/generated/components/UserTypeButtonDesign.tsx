@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { StyleSheet, Text, View, TouchableOpacity, TouchableOpacityProps, ViewProps, TextProps } from 'react-native'
 import { Patient } from '../../../../icons'
 import Fonts from '../../../helpers/Fonts'
 
+import { ThemeContext } from '../../../../context';
 
 interface IUserTypeButtonDesign {
     PatientIcon1Props?: any
@@ -15,6 +16,9 @@ interface IUserTypeButtonDesign {
 }
 
 export default function UserTypeButtonDesign(props: IUserTypeButtonDesign) {
+    const { theme } = useContext(ThemeContext);
+    console.log("theme: ", theme)
+
     return (
         <TouchableOpacity>
             <>
@@ -49,6 +53,7 @@ const Themes = StyleSheet.create({
 
     typeItem: {
         flexDirection: 'row',
+        image: 'deneme.png',
     },
 
     itemLblContainer: {

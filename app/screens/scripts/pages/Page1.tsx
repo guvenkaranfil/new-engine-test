@@ -9,7 +9,8 @@ export default function Page1({ }) {
 
   return <Page1Design
     userTypeButton1={{
-      userType: userType
+      userType: userType,
+      userTypeButtonPress: () => setuserType("patient")
     }}
 
     btn1Props={{
