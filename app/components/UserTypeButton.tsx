@@ -1,7 +1,7 @@
 import { GestureResponderEvent, PressableProps, StyleSheet, Text, View } from 'react-native'
 import React, { useState } from 'react'
-import UserTypeButtonDesign from '../../generated/components/UserTypeButtonDesign'
-import Fonts from '../../../helpers/Fonts';
+import UserTypeButtonDesign from './generated/UserTypeButtonDesign'
+import Fonts from '../helpers/Fonts';
 
 export interface IUserTypeButton {
   userType: 'patient' | 'doctor',

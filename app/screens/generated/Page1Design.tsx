@@ -1,8 +1,8 @@
 import React from 'react'
 import { Pressable, PressableProps, StyleSheet, Text, TextProps, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import UserTypeButton, { IUserTypeButton } from '../../scripts/components/UserTypeButton'
-import Fonts from '../../../helpers/Fonts'
+import UserTypeButton, { IUserTypeButton } from '../../components/UserTypeButton'
+import Fonts from '../../helpers/Fonts'
 
 interface IPage1Design {
     userTypeButton1: IUserTypeButton

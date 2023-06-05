@@ -1,12 +1,15 @@
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { NativeStackNavigationOptions, createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const Stack = createNativeStackNavigator();
 
 // Generated Pages
-import Page1 from '../../screens/scripts/pages/Page1';
+import Page1 from '../../screens/Page1';
 
+interface IAppNavigation {
+  stack1Props?: NativeStackNavigationOptions
+}
 
 // GeneratedCode
 const AppNavigatorUI = () => {
@@ -21,3 +24,9 @@ const AppNavigatorUI = () => {
 
 
 export default AppNavigatorUI;
+
+
+// app/generated
+// >> components
+// >> screens
+// >> navigation

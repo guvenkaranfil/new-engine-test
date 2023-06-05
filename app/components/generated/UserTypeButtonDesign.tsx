@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
 import { StyleSheet, Text, View, TouchableOpacity, TouchableOpacityProps, ViewProps, TextProps } from 'react-native'
-import { Patient } from '../../../../icons'
-import Fonts from '../../../helpers/Fonts'
+import { Patient } from '../../assets/icons'
+import Fonts from '../../helpers/Fonts'
 
-import { ThemeContext } from '../../../../context';
+import { ThemeContext } from '../../../context';
 
 interface IUserTypeButtonDesign {
     PatientIcon1Props?: any

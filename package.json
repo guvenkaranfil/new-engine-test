@@ -9,7 +9,7 @@
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "convert-svg": "npx @svgr/cli -- icons/test.svg > icons/test.js",
-    "svgr": "svgr ./svgs -d ./icons --native --icon - --ignore-existing"
+    "svgr": "svgr ./app/assets/svgs -d ./app/assets/icons --native --icon - --ignore-existing"
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^6.5.7",

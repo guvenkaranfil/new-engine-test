@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Page1Design from '../../generated/pages/Page1Design'
+import Page1Design from './generated/Page1Design'
 
 
 // Page1 User File
