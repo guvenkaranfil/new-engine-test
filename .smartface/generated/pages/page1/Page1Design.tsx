@@ -1,5 +1,5 @@
 import React from 'react'
-import { Pressable, PressableProps, StyleSheet, Text, TextProps, View } from 'react-native'
+import { Pressable, PressableProps, StatusBar, StyleSheet, Text, TextProps, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import UserTypeButton, { IUserTypeButton } from '../../components/UserTypeButton'
 import Fonts from '../../helpers/Fonts'
@@ -14,6 +14,7 @@ interface IPage1Design {
 // Not Editable
 const Page1Design = (props: IPage1Design) => (
     <SafeAreaView style={styles.container}>
+        <StatusBar barStyle={'dark-content'}></StatusBar>
         <View style={styles.infoContainer}>
             <Text style={styles.infoTitleLbl}>Let's get acquainted</Text>
             <Text style={styles.infoDescribeLbl}>Pellentesque placerat arcu in risus facilisis, sed laoreet eros laoreet.</Text>

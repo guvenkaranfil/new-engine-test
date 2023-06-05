@@ -1,7 +1,7 @@
 import { GestureResponderEvent, PressableProps, StyleSheet, Text, View } from 'react-native'
 import React, { useState } from 'react'
-import UserTypeButtonDesign from './generated/UserTypeButtonDesign'
 import Fonts from '../helpers/Fonts';
+import  UserTypeButtonDesign  from '../../.smartface/generated/components/UserTypeButtonDesign';
 
 export interface IUserTypeButton {
   userType: 'patient' | 'doctor',
@@ -17,7 +17,7 @@ export default function UserTypeButton(props: IUserTypeButton) {
         onPress: props.userTypeButtonPress
       }}
       view1Props={{
-        style: [props.userType === 'patient' ? Themes.activeType : null, Themes.rectangle]
+        style: [props.userType === 'doctor' ? Themes.activeType : null, Themes.rectangle]
       }}
       PatientIcon1Props={{
         fill: props.userType === 'patient' ? "#fff" : '#000',
