@@ -1,15 +1,13 @@
 {
-  ".switch": {
-    "width": 60,
-    "android": {
-      "toggleOffColor": "#EEEEEE"
-    },
-    "toggleOnColor": "#00a1f1",
-    "flexProps": {
-      "alignSelf": "AUTO",
-      "positionType": "RELATIVE"
-    },
-    "minHeight": 31,
-    "minWidth": 60
-  }
+    ".switch": {
+        "width": 60,
+        "toggleOffColor": "#EEEEEE",
+        "toggleOnColor": "#00a1f1",
+        "flexProps": {
+            "alignSelf": "AUTO",
+            "positionType": "RELATIVE"
+        },
+        "minHeight": 31,
+        "minWidth": 60
+    }
 }

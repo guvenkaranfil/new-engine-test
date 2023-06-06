@@ -1,12 +1,12 @@
 {
-  "#page3": {
-    "&-btnGoBack": {
-      "flexProps": {
-        "alignSelf": "STRETCH"
-      }
+    "#page3": {
+        "flexProps": {
+            "justifyContent": "FLEX_END"
+        }
     },
-    "flexProps": {
-      "justifyContent": "FLEX_END"
+    "#page3-btnGoBack": {
+        "flexProps": {
+            "alignSelf": "STRETCH"
+        }
     }
-  }
 }

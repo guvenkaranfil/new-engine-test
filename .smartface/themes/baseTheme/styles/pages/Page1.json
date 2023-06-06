@@ -1,52 +1,58 @@
 {
-  "#page1": {
-    "flexProps": {
-      "justifyContent": "SPACE_BETWEEN",
-      "alignItems": "STRETCH"
+    "#page1": {
+        "flexProps": {
+            "justifyContent": "SPACE_BETWEEN",
+            "alignItems": "STRETCH"
+        },
+        "paddingBottom": 20,
+        "paddingLeft": 16,
+        "paddingRight": 16
     },
-    "paddingBottom": 20,
-    "paddingLeft": 16,
-    "paddingRight": 16,
-    "&-lbl": {
-      "backgroundColor": "rgba( 255, 255, 255, 0 )",
-      "flexProps": {
-        "marginLeft": 20,
-        "marginRight": 20,
-        "alignSelf": "STRETCH"
-      },
-      "font": {
-        "size": 32,
-        "bold": false,
-        "italic": false,
-        "family": "SFProText",
-        "style": "Regular"
-      },
-      "multiline": true,
-      "textAlignment": "MIDCENTER",
-      "textColor": "${mainTextColor}"
+    "#page1-lbl": {
+        "backgroundColor": "rgba( 255, 255, 255, 0 )",
+        "flexProps": {
+            "marginLeft": 20,
+            "marginRight": 20,
+            "alignSelf": "STRETCH"
+        },
+        "font": {
+            "size": 32,
+            "bold": false,
+            "italic": false,
+            "family": "SFProText",
+            "style": "Regular"
+        },
+        "multiline": true,
+        "textAlignment": "MIDCENTER",
+        "textColor": "${mainTextColor}",
+        "borderWidth": 2,
+        "borderRadius": 2,
+        "borderRadiusEdges": {
+            "bottomRight": false,
+            "topRight": false
+        }
     },
-    "&-btnNext": {
-      "flexProps": {
-        "alignSelf": "AUTO",
-        "positionType": "RELATIVE"
-      },
-      "width": null
+    "#page1-label1": {
+        "height": null,
+        "width": null,
+        "font": {
+            "size": 36
+        },
+        "textAlignment": "MIDCENTER"
     },
-    "&-wrapper": {
-      "flexProps": {
-        "flexGrow": 1,
-        "justifyContent": "CENTER"
-      },
-      "height": null,
-      "width": null
+    "#page1-wrapper": {
+        "flexProps": {
+            "flexGrow": 1,
+            "justifyContent": "CENTER"
+        },
+        "height": null,
+        "width": null
     },
-    "&-label1": {
-      "height": null,
-      "width": null,
-      "font": {
-        "size": 36
-      },
-      "textAlignment": "MIDCENTER"
+    "#page1-btnNext": {
+        "flexProps": {
+            "alignSelf": "AUTO",
+            "positionType": "RELATIVE"
+        },
+        "width": null
     }
-  }
 }

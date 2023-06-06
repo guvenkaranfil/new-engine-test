@@ -1,57 +1,56 @@
 {
     ".simpleListviewItem": {
         "flexProps": {
-          "flexDirection": "ROW",
-          "alignItems": "CENTER"
-        },
-        "&_title": {
-          "flexProps": {
+            "flexDirection": "ROW",
+            "alignItems": "CENTER"
+        }
+    },
+    ".simpleListviewItem_title": {
+        "flexProps": {
             "flexGrow": 3,
             "alignSelf": "AUTO"
-          },
-          "font": {
+        },
+        "font": {
             "size": 16,
             "bold": false,
             "italic": false,
             "family": "SFProText",
             "style": "Regular"
-          },
-          "marginBottom": null,
-          "marginLeft": 16,
-          "marginTop": null,
-          "textColor": "rgba( 0, 0, 0, 1 )",
-          "width": null
         },
-        "&_chevron": {
-          "marginBottom": null,
-          "marginRight": 16,
-          "marginTop": null,
-          "textAlignment": "MIDRIGHT",
-          "textColor": "rgba( 0, 0, 0, 0.25 )",
-          "width": null,
-          "flexProps": {
+        "marginBottom": null,
+        "marginLeft": 16,
+        "marginTop": null,
+        "textColor": "rgba( 0, 0, 0, 1 )",
+        "width": null
+    },
+    ".simpleListviewItem_chevron": {
+        "marginBottom": null,
+        "marginRight": 16,
+        "marginTop": null,
+        "textAlignment": "MIDRIGHT",
+        "textColor": "rgba( 0, 0, 0, 0.25 )",
+        "width": null,
+        "flexProps": {
             "flexGrow": 1
-          },
-          "font": {
+        },
+        "font": {
             "size": 13,
             "bold": false,
             "italic": false,
             "family": "FontAwesome5FreeSolid",
             "style": null
-          }
-        },
-        "&_line": {
-          "backgroundColor": "rgba( 210, 210, 210, 1 )",
-          "bottom": 0,
-          "flexProps": {
-            "positionType": "ABSOLUTE"
-          },
-          "height": 1,
-          "left": 16,
-          "marginBottom": null,
-          "marginTop": null,
-          "right": 0
         }
-      }
-  }
-  
+    },
+    ".simpleListviewItem_line": {
+        "backgroundColor": "rgba( 210, 210, 210, 1 )",
+        "bottom": 0,
+        "flexProps": {
+            "positionType": "ABSOLUTE"
+        },
+        "height": 1,
+        "left": 16,
+        "marginBottom": null,
+        "marginTop": null,
+        "right": 0
+    }
+}
