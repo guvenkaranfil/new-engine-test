@@ -1,9 +1,5 @@
 {
     ".statusBar": {
-        "android": {
-            "color": "${mainColor}"
-        },
-        "style": "LIGHTCONTENT",
-        "visible": true
+        "backgroundColor": "#00a1f1"
     }
 }

@@ -1,10 +1,7 @@
 {
     ".switch": {
         "width": 60,
-        "toggleOffColor": "#EEEEEE",
-        "toggleOnColor": "#00a1f1",
-        "alignSelf": "auto",
-        "position": "relative",
+        "color": "#999999",
         "minHeight": 31,
         "minWidth": 60
     }

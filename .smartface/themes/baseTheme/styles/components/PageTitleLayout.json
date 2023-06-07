@@ -1,14 +1,14 @@
 {
     ".pageTitleLayout": {
         "backgroundColor": "rgba( 255, 255, 255, 0 )",
-        "flexDirection": "COLUMN",
+        "flexDirection": "column",
         "justifyContent": "center",
         "height": 50
     },
     ".pageTitleLayout-logo": {
         "tintColor": "rgba( 255, 255, 255, 1 )",
         "height": 25,
-        "resizeMode": "normal",
+        "resizeMode": "cover",
         "alignSelf": "center",
         "width": 120
     }

@@ -5,9 +5,6 @@
         "color": "#00a1f1",
         "position": "relative",
         "alignSelf": "center",
-        "ios": {
-            "activityIndicatorViewStyle": "LARGE"
-        },
         "minHeight": 21,
         "minWidth": 21
     }

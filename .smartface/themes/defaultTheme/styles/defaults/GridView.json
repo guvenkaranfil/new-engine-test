@@ -1,9 +1,0 @@
-{
-    ".gridView": {
-        "height": 343,
-        "width": null,
-        "backgroundColor": "rgba(255,255,255,0)",
-        "alignSelf": "auto",
-        "position": "relative"
-    }
-}

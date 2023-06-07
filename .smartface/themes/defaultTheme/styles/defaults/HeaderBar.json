@@ -1,10 +1,5 @@
 {
     ".headerBar": {
-        "visible": true,
-        "transparent": false,
-        "backgroundColor": "${mainColor}",
-        "titleColor": "${white}",
-        "itemColor": "${white}",
-        "borderVisibility": false
+        "backgroundColor": "${mainColor}"
     }
 }
