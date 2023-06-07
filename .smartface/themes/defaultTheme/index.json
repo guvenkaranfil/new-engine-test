@@ -10,7 +10,6 @@
         "StatusBar": ".statusBar",
         "Switch": ".switch",
         "TextInput": ".textBox",
-        "VideoView": ".videoView",
         "WebView": ".webView",
         "ScrollView": ".scrollView",
         "View": ".view",
