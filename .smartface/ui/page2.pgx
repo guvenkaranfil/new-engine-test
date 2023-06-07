@@ -11,7 +11,9 @@
 					"0794-669f-111b-d300",
 					"8e22-8e5c-8917-dc71",
 					"9e3d-3c8c-de2c-aad8",
-					"cd68-9fe6-7d1d-510a"
+					"cd68-9fe6-7d1d-510a",
+					"a822-46f3-b927-094c",
+					"5324-4502-aef4-8ea6"
 				],
 				"isRemovable": true,
 				"name": "page2",
@@ -54,11 +56,10 @@
 			}
 		},
 		{
-			"className": ".button #page2-btnLanguage",
+			"className": ".button .button.warning .button.test #page2-btnLanguage",
 			"id": "0794-669f-111b-d300",
 			"oldName": "btnSayHello_1",
 			"props": {
-				"autoHeight": 51.11111111111111,
 				"children": [],
 				"name": "btnLanguage",
 				"parent": "7761adc8",
@@ -90,7 +91,6 @@
 			"className": ".label #page1-lbl",
 			"id": "6112-0cb4-58cc-932e",
 			"props": {
-				"autoHeight": 76.66666666666667,
 				"children": [],
 				"name": "lbl",
 				"parent": "8e22-8e5c-8917-dc71",
@@ -109,7 +109,6 @@
 			"className": ".button #page2-btnSayHello",
 			"id": "9e3d-3c8c-de2c-aad8",
 			"props": {
-				"autoHeight": 51.11111111111111,
 				"children": [],
 				"name": "btnSayHello",
 				"parent": "7761adc8",
@@ -129,7 +128,6 @@
 			"className": ".button #page2-btnOpenModal",
 			"id": "cd68-9fe6-7d1d-510a",
 			"props": {
-				"autoHeight": 51.11111111111111,
 				"children": [],
 				"name": "btnOpenModal",
 				"parent": "7761adc8",
@@ -143,6 +141,28 @@
 				"text": "Open a Modal Page",
 				"usePageVariable": true
 			}
+		},
+		{
+			"className": ".pressable #page2-pressable1",
+			"id": "a822-46f3-b927-094c",
+			"props": {
+				"children": [],
+				"name": "pressable1",
+				"parent": "7761adc8"
+			},
+			"type": "Pressable",
+			"userProps": {}
+		},
+		{
+			"className": ".view #page2-view1",
+			"id": "5324-4502-aef4-8ea6",
+			"props": {
+				"children": [],
+				"name": "view1",
+				"parent": "7761adc8"
+			},
+			"type": "View",
+			"userProps": {}
 		}
 	]
 }

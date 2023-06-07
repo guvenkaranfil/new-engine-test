@@ -1,12 +1,8 @@
 {
     "#page3": {
-        "flexProps": {
-            "justifyContent": "FLEX_END"
-        }
+        "justifyContent": "flex-end"
     },
     "#page3-btnGoBack": {
-        "flexProps": {
-            "alignSelf": "STRETCH"
-        }
+        "alignSelf": "stretch"
     }
 }

@@ -1,10 +1,9 @@
 {
     ".icon": {
-        "masksToBounds": true,
         "height": 50,
         "width": 50,
         "maxLines": 0,
-        "textColor": "#00a1f1",
+        "color": "#00a1f1",
         "textAlignment": "MIDCENTER",
         "font": {
             "family": "FontAwesome5FreeSolid",
@@ -13,9 +12,7 @@
             "size": 42
         },
         "glyph": "",
-        "flexProps": {
-            "alignSelf": "AUTO",
-            "positionType": "RELATIVE"
-        }
+        "alignSelf": "auto",
+        "position": "relative"
     }
 }

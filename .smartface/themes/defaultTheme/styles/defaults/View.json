@@ -1,11 +1,14 @@
 {
-  ".view": {
-    "masksToBounds": true,
-    "height": 343,
-    "width": null,
-    "backgroundColor": "rgb(210, 210, 210)",
-    "flexProps": {
-      "positionType": "RELATIVE"
+    ".view": {
+        "height": 343,
+        "width": null,
+        "alignSelf": "auto",
+        "direction": "inherit",
+        "alignContent": "stretch",
+        "alignItems": "stretch",
+        "justifyContent": "flex-start",
+        "flexWrap": "nowrap",
+        "flexDirection": "column",
+        "position": "relative"
     }
-  }
 }

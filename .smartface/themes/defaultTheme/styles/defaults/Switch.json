@@ -3,10 +3,8 @@
         "width": 60,
         "toggleOffColor": "#EEEEEE",
         "toggleOnColor": "#00a1f1",
-        "flexProps": {
-            "alignSelf": "AUTO",
-            "positionType": "RELATIVE"
-        },
+        "alignSelf": "auto",
+        "position": "relative",
         "minHeight": 31,
         "minWidth": 60
     }

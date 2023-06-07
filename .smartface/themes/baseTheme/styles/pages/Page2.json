@@ -1,21 +1,18 @@
 {
     "#page2": {
-        "flexProps": {
-            "justifyContent": "SPACE_AROUND",
-            "alignItems": "STRETCH"
-        },
+        "justifyContent": "space-around",
+        "alignItems": "stretch",
         "paddingBottom": 20,
         "paddingLeft": 16,
-        "paddingRight": 16
+        "paddingRight": 16,
+        "flexDirection": "column"
     },
     "#page2-lbl": {
         "backgroundColor": "rgba( 255, 255, 255, 0 )",
-        "flexProps": {
-            "marginLeft": 20,
-            "marginRight": 20,
-            "alignSelf": "STRETCH",
-            "flexGrow": 1
-        },
+        "marginLeft": 20,
+        "marginRight": 20,
+        "alignSelf": "stretch",
+        "flex": 1,
         "font": {
             "size": 32,
             "bold": false,
@@ -26,37 +23,54 @@
         "height": 90,
         "left": 0,
         "multiline": true,
-        "textAlignment": "MIDCENTER",
+        "textAlign": "center",
         "textColor": "${mainTextColor}",
         "top": 0,
         "width": null
     },
     "#page2-btnSayHello": {
-        "flexProps": {
-            "alignSelf": "AUTO",
-            "positionType": "RELATIVE"
-        },
+        "alignSelf": "center",
+        "position": "relative",
         "left": 0,
         "top": 0,
         "width": null,
         "marginBottom": 10
     },
     "#page2-btnOpenModal": {
-        "flexProps": {
-            "alignSelf": "AUTO",
-            "positionType": "RELATIVE"
-        },
+        "alignSelf": "auto",
+        "position": "relative",
         "left": 0,
         "top": 0,
         "width": null
     },
     "#page2-btnLanguage": {
-        "flexProps": {
-            "alignSelf": "AUTO",
-            "positionType": "RELATIVE"
-        },
+        "alignSelf": "auto",
+        "position": "relative",
         "width": null,
         "marginBottom": 10,
-        "marginTop": 10
+        "marginTop": 10,
+        "left": -1.2,
+        "top": 215.66
+    },
+    "#page2-pressable1": {
+        "justifyContent": "space-evenly",
+        "alignItems": "stretch",
+        "backgroundColor": "rgba( 162, 32, 32, 1 )",
+        "alignSelf": "flex-end",
+        "width": "50",
+        "position": "relative"
+    },
+    "#page2-view1": {
+        "position": "relative",
+        "display": "none",
+        "backgroundColor": "rgba( 65, 117, 5, 0.41 )",
+        "opacity": 0.55,
+        "shadowOffset": {
+            "width": 4,
+            "height": 4
+        },
+        "shadowRadius": 4,
+        "shadowOpacity": 0.39,
+        "shadowColor": "rgba( 142, 56, 56, 1 )"
     }
 }

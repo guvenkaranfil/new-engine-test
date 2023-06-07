@@ -1,13 +1,10 @@
 {
-  ".gridViewItem": {
-    "masksToBounds": true,
-    "height": 227,
-    "width": 165,
-    "flexProps": {
-      "alignSelf": "AUTO",
-      "positionType": "RELATIVE",
-      "alignContent": "STRETCH",
-      "alignItems": "STRETCH"
+    ".gridViewItem": {
+        "height": 227,
+        "width": 165,
+        "alignSelf": "auto",
+        "position": "relative",
+        "alignContent": "stretch",
+        "alignItems": "stretch"
     }
-  }
 }

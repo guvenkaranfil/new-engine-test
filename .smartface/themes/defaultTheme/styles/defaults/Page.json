@@ -1,15 +1,12 @@
 {
-  ".page": {
-    "masksToBounds": true,
-    "flexProps": {
-      "alignContent": "STRETCH",
-      "alignItems": "STRETCH",
-      "direction": "INHERIT",
-      "flexDirection": "COLUMN",
-      "flexWrap": "NOWRAP",
-      "justifyContent": "FLEX_START"
-    },
-    "backgroundColor": "#FFFFFF",
-    "orientation": "PORTRAIT"
-  }
+    ".page": {
+        "alignContent": "stretch",
+        "alignItems": "stretch",
+        "direction": "inherit",
+        "flexDirection": "column",
+        "flexWrap": "nowrap",
+        "justifyContent": "flex-start",
+        "backgroundColor": "#FFFFFF",
+        "orientation": "PORTRAIT"
+    }
 }

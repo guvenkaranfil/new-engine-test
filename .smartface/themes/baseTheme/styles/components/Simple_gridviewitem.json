@@ -1,19 +1,15 @@
 {
     ".simpleGridviewItem": {
-        "flexProps": {
-            "justifyContent": "FLEX_START",
-            "alignItems": "STRETCH"
-        },
+        "justifyContent": "flex-start",
+        "alignItems": "stretch",
         "height": 227,
         "width": 165
     },
     ".simpleGridviewItem_preview": {
         "height": 165,
-        "flexProps": {
-            "alignSelf": "CENTER"
-        },
+        "alignSelf": "center",
         "image": "imageview_preview.png",
-        "imageFillType": "ASPECTFIT",
+        "resizeMode": "contain",
         "marginBottom": null,
         "marginTop": null,
         "marginLeft": 15,
@@ -21,10 +17,8 @@
         "width": null
     },
     ".simpleGridviewItem_title": {
-        "flexProps": {
-            "positionType": "RELATIVE",
-            "alignSelf": "AUTO"
-        },
+        "position": "relative",
+        "alignSelf": "auto",
         "font": {
             "size": 15,
             "bold": true,
@@ -35,14 +29,12 @@
         "height": 20,
         "marginBottom": null,
         "marginTop": 13,
-        "textAlignment": "MIDCENTER",
+        "textAlign": "center",
         "textColor": "rgba( 0, 0, 0, 1 )"
     },
     ".simpleGridviewItem_subtitle": {
-        "flexProps": {
-            "positionType": "RELATIVE",
-            "alignSelf": "AUTO"
-        },
+        "position": "relative",
+        "alignSelf": "auto",
         "font": {
             "size": 13,
             "bold": false,
@@ -53,7 +45,7 @@
         "height": 18,
         "marginBottom": 12,
         "marginTop": null,
-        "textAlignment": "MIDCENTER",
+        "textAlign": "center",
         "textColor": "rgba( 0, 0, 0, 1 )"
     }
 }

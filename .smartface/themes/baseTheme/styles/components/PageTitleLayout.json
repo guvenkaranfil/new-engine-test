@@ -1,19 +1,15 @@
 {
     ".pageTitleLayout": {
         "backgroundColor": "rgba( 255, 255, 255, 0 )",
-        "flexProps": {
-            "flexDirection": "COLUMN",
-            "justifyContent": "CENTER"
-        },
+        "flexDirection": "COLUMN",
+        "justifyContent": "center",
         "height": 50
     },
     ".pageTitleLayout-logo": {
         "tintColor": "rgba( 255, 255, 255, 1 )",
         "height": 25,
-        "imageFillType": "ASPECTFIT",
-        "flexProps": {
-            "alignSelf": "CENTER"
-        },
+        "resizeMode": "normal",
+        "alignSelf": "center",
         "width": 120
     }
 }

@@ -5,14 +5,10 @@
     },
     ".separator.relative": {
         "height": 1,
-        "flexProps": {
-            "positionType": "RELATIVE"
-        }
+        "position": "relative"
     },
     ".separator.absolute": {
         "height": 1,
-        "flexProps": {
-            "positionType": "ABSOLUTE"
-        }
+        "position": "ABSOLUTE"
     }
 }

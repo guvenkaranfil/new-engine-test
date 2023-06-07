@@ -1,22 +1,19 @@
 {
-  ".label": {
-    "masksToBounds": true,
-    "height": 50,
-    "width": null,
-    "maxLines": 0,
-    "ellipsizeMode": "END",
-    "textColor": "#00a1f1",
-    "textAlignment": "MIDLEFT",
-    "font": {
-      "size": 17,
-      "bold": true,
-      "italic": false,
-      "family": "SFProText",
-      "style": "Semibold"
-    },
-    "flexProps": {
-      "alignSelf": "AUTO",
-      "positionType": "RELATIVE"
+    ".label": {
+        "height": 50,
+        "width": null,
+        "maxLines": 0,
+        "ellipsizeMode": "end",
+        "color": "#00a1f1",
+        "textAlignt": "left",
+        "font": {
+            "size": 17,
+            "bold": true,
+            "italic": false,
+            "family": "SFProText",
+            "style": "Semibold"
+        },
+        "alignSelf": "auto",
+        "position": "relative"
     }
-  }
 }

@@ -1,15 +1,12 @@
 {
-  ".textView": {
-    "masksToBounds": true,
-    "width": null,
-    "height": 131,
-    "maxLines": 2,
-    "ellipsizeMode": "END",
-    "textAlignment": "MIDLEFT",
-    "backgroundColor": "rgba(255,255,255,0)",
-    "flexProps": {
-      "alignSelf": "AUTO",
-      "positionType": "RELATIVE"
+    ".textView": {
+        "width": null,
+        "height": 131,
+        "maxLines": 2,
+        "ellipsizeMode": "end",
+        "textAlign": "left",
+        "backgroundColor": "rgba(255,255,255,0)",
+        "alignSelf": "auto",
+        "position": "relative"
     }
-  }
 }
