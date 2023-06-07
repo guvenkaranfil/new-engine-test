@@ -11,40 +11,23 @@
         "marginLeft": 20,
         "marginRight": 20,
         "alignSelf": "stretch",
-        "font": {
-            "size": 32,
-            "bold": false,
-            "italic": false,
-            "family": "SFProText",
-            "style": "Regular"
-        },
-        "multiline": true,
+        "fontSize": 32,
+        "fontFamily": "SFProText",
         "textAlign": "center",
-        "textColor": "${mainTextColor}",
+        "color": "${mainTextColor}",
         "borderWidth": 2,
         "borderRadius": 2,
-        "borderRadiusEdges": {
-            "bottomRight": false,
-            "topRight": false
-        }
     },
     "#page1-label1": {
-        "height": null,
-        "width": null,
-        "font": {
-            "size": 36
-        },
+        "fontSize": 36,
         "textAlign": "center"
     },
     "#page1-wrapper": {
         "flex": 1,
-        "justifyContent": "center",
-        "height": null,
-        "width": null
+        "justifyContent": "center"
     },
     "#page1-btnNext": {
         "alignSelf": "auto",
-        "position": "relative",
-        "width": null
+        "position": "relative"
     }
 }

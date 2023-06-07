@@ -13,20 +13,14 @@
         "marginRight": 20,
         "alignSelf": "stretch",
         "flex": 1,
-        "font": {
-            "size": 32,
-            "bold": false,
-            "italic": false,
-            "family": "SFProText",
-            "style": "Regular"
-        },
+        "fontSize": 32,
+        "fontFamily": "SFProText",
         "height": 90,
         "left": 0,
         "multiline": true,
         "textAlign": "center",
-        "textColor": "${mainTextColor}",
-        "top": 0,
-        "width": null
+        "color": "${mainTextColor}",
+        "top": 0
     },
     "#page2-btnSayHello": {
         "alignSelf": "center",

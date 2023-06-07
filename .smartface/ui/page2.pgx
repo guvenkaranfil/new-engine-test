@@ -29,7 +29,7 @@
 			"version": "6.15.1"
 		},
 		{
-			"className": ".statusBar",
+			"className": ".statusBar #page2-statusBar",
 			"id": "a829471c",
 			"props": {
 				"children": [],
@@ -41,7 +41,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".headerBar",
+			"className": ".headerBar #page2-headerBar",
 			"id": "35f1c1a1",
 			"props": {
 				"children": [],

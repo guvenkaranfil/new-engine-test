@@ -9,6 +9,6 @@
     },
     ".separator.absolute": {
         "height": 1,
-        "position": "ABSOLUTE"
+        "position": "absolute"
     }
 }
