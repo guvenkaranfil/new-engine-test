@@ -1,29 +1,7 @@
-import React, { useState } from 'react'
-import Page1Design from '../../.smartface/generated/pages/page1/Page1Design'
+import React from 'react'
+import Page1Design from '../../.smartface/generated/pages/page1';
 
+export default (props: any) => {
 
-// Page1 User File
-// Fully Editable
-export default function Page1({ }) {
-  const [userType, setuserType] = useState<'patient' | 'doctor'>('patient');
-
-  return <Page1Design
-    userTypeButton1={{
-      userType: userType,
-      userTypeButtonPress: () => setuserType("patient")
-    }}
-
-    btn1Props={{
-      onPress: () => {
-        if (userType === 'doctor') {
-          setuserType('patient')
-        } else {
-          setuserType('doctor')
-        }
-      }
-    }}
-
-    text1Pros={{ label: 'Continue' }}
-
-  />
+    return <Page1Design />;
 }
