@@ -5,7 +5,7 @@ import { NativeStackNavigationOptions, createNativeStackNavigator } from '@react
 const Stack = createNativeStackNavigator();
 
 // Generated Pages
-import Page1 from '../../screens/Page1';
+import Page1 from '@smartface-generated/pages/page1';
 
 interface IAppNavigation {
   stack1Props?: NativeStackNavigationOptions
