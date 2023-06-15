@@ -1,0 +1,17 @@
+[
+	{
+		"id": "dccddc45-b47d-42d2-be09-570625f4ca62",
+		"type": "StackRouter",
+		"isContainer": true,
+		"name": "emptyStack",
+		"children": [],
+		"props": {
+			"path": "emptyStack",
+			"x": 329.75957035847955,
+			"y": -243.0644170143849,
+			"homeRoute": "route1",
+			"to": "route1"
+		},
+		"parent": "libAppRouter"
+	}
+]

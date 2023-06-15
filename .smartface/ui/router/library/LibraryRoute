@@ -1,0 +1,16 @@
+[
+	{
+		"id": "c9b99a5e-2e3b-479c-af18-323ee4881127",
+		"type": "Route",
+		"isContainer": false,
+		"name": "libraryRoute",
+		"children": [],
+		"props": {
+			"path": "route1",
+			"x": 145.7595703584795,
+			"y": -53.5644170143849,
+			"page": "page1"
+		},
+		"parent": "libAppRouter"
+	}
+]

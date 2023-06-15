@@ -11,9 +11,11 @@
         },
     },
     "include": [
-        "./.smartface/**/*"
+        "./.smartface/**/*",
+        "./app/**/*"
     ],
     "lib": [
-        ".smartface"
+        ".smartface",
+        "app"
     ]
 }
