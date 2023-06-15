@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-import AppNavigatorUI from './app/navigation/generated/AppNavigation';
+import AppNavigatorUI from './app/routers';
 
 import { ThemeProvider } from './context';
 export default function App() {
-    return (
-        <ThemeProvider>
-            <AppNavigatorUI />
-        </ThemeProvider>
-    )
+  return (
+    <ThemeProvider>
+      <AppNavigatorUI />
+    </ThemeProvider>
+  );
 }

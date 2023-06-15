@@ -7,7 +7,8 @@
         "skipLibCheck": true, /* Skip type checking all .d.ts files. */
         "baseUrl": ".",
         "paths": {
-            "@smartface-generated/*": [".smartface/generated/*"]
+            "@smartface-generated/*": [".smartface/generated/*"],
+            "@app/*": ["app/*"]
         },
     },
     "include": [
