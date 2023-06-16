@@ -1,98 +1,122 @@
 {
 	"components": [
 		{
-			"type": "Page",
-			"id": "3cf2-3cca-6e66-ecaf",
-			"userProps": {},
 			"className": ".page",
+			"id": "3cf2-3cca-6e66-ecaf",
+			"initialized": true,
 			"props": {
-				"name": "page2",
-				"parent": null,
 				"children": [
 					"f351-8558-564b-dc58",
-					"02eb-0c9e-f443-3a7c"
+					"02eb-0c9e-f443-3a7c",
+					"9674-03c4-b930-da3a",
+					"6d26-64b3-7474-9054",
+					"910e-1be3-c257-fa59"
 				],
-				"orientation": "PORTRAIT"
-			},
-			"version": "0.13.0",
-			"initialized": false
-		},
-		{
-			"type": "StatusBar",
-			"id": "f351-8558-564b-dc58",
-			"userProps": {},
-			"className": ".statusBar",
-			"props": {
-				"name": "statusBar",
-				"parent": "3cf2-3cca-6e66-ecaf",
-				"children": [],
-				"visible": true,
-				"isRemovable": false
-			}
-		},
-		{
-			"type": "HeaderBar",
-			"id": "02eb-0c9e-f443-3a7c",
-			"userProps": {
-				"title": "page2"
-			},
-			"className": ".headerBar",
-			"props": {
-				"name": "headerBar",
-				"parent": "3cf2-3cca-6e66-ecaf",
-				"children": [],
-				"title": "page2",
-				"visible": true,
-				"isRemovable": false
-			}
-		}
-	],
-	"componentByID": {
-		"886d-f031-a82d-eb8a": {
-			"type": "Page",
-			"id": "3cf2-3cca-6e66-ecaf",
-			"userProps": {},
-			"className": ".page",
-			"props": {
 				"name": "page2",
-				"parent": null,
-				"children": [
-					"f351-8558-564b-dc58",
-					"02eb-0c9e-f443-3a7c"
-				],
-				"orientation": "PORTRAIT"
+				"parent": null
 			},
-			"version": "0.13.0",
-			"initialized": false
-		},
-		"01a9-e4e5-f582-50eb": {
-			"type": "StatusBar",
-			"id": "f351-8558-564b-dc58",
+			"type": "Page",
 			"userProps": {},
-			"className": ".statusBar",
-			"props": {
-				"name": "statusBar",
-				"parent": "3cf2-3cca-6e66-ecaf",
-				"children": [],
-				"visible": true,
-				"isRemovable": false
-			}
+			"version": "0.13.0"
 		},
-		"e2e3-a51c-acc4-36d5": {
-			"type": "HeaderBar",
-			"id": "02eb-0c9e-f443-3a7c",
-			"userProps": {
-				"title": "page2"
-			},
-			"className": ".headerBar",
+		{
+			"className": ".statusBar",
+			"id": "f351-8558-564b-dc58",
 			"props": {
+				"backgroundColor": "#00a1f1",
+				"children": [],
+				"name": "statusBar",
+				"parent": "3cf2-3cca-6e66-ecaf"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".headerBar",
+			"id": "02eb-0c9e-f443-3a7c",
+			"props": {
+				"children": [],
 				"name": "headerBar",
 				"parent": "3cf2-3cca-6e66-ecaf",
+				"title": "page2"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "page2"
+			}
+		},
+		{
+			"className": ".activityIndicator",
+			"id": "9674-03c4-b930-da3a",
+			"props": {
 				"children": [],
-				"title": "page2",
-				"visible": true,
-				"isRemovable": false
+				"color": "rgba( 44, 95, 120, 1 )",
+				"name": "activityIndicator1",
+				"parent": "3cf2-3cca-6e66-ecaf",
+				"size": "large"
+			},
+			"type": "ActivityIndicator",
+			"userProps": {
+				"color": "rgba( 44, 95, 120, 1 )",
+				"size": "large"
+			}
+		},
+		{
+			"className": ".switch #page2-switch1",
+			"id": "6d26-64b3-7474-9054",
+			"props": {
+				"children": [],
+				"name": "switch1",
+				"parent": "3cf2-3cca-6e66-ecaf",
+				"thumbColor": "rgba( 80, 227, 194, 1 )",
+				"trackColor": {
+					"false": "rgba( 181, 38, 38, 1 )",
+					"true": "rgba( 248, 231, 28, 1 )"
+				}
+			},
+			"type": "Switch",
+			"userProps": {
+				"thumbColor": "rgba( 80, 227, 194, 1 )",
+				"trackColor": {
+					"false": "rgba( 181, 38, 38, 1 )",
+					"true": "rgba( 248, 231, 28, 1 )"
+				}
+			}
+		},
+		{
+			"className": ".view #page2-view1",
+			"id": "910e-1be3-c257-fa59",
+			"props": {
+				"children": [
+					"5d1e-09a4-5b40-46a4"
+				],
+				"name": "view1",
+				"parent": "3cf2-3cca-6e66-ecaf"
+			},
+			"type": "View",
+			"userProps": {}
+		},
+		{
+			"className": ".switch #page2-switch2",
+			"id": "5d1e-09a4-5b40-46a4",
+			"props": {
+				"children": [],
+				"name": "switch2",
+				"parent": "910e-1be3-c257-fa59",
+				"thumbColor": "rgba( 65, 117, 5, 1 )",
+				"trackColor": {
+					"true": "rgba( 248, 231, 28, 1 )"
+				},
+				"value": true
+			},
+			"type": "Switch",
+			"userProps": {
+				"thumbColor": "rgba( 65, 117, 5, 1 )",
+				"trackColor": {
+					"true": "rgba( 248, 231, 28, 1 )"
+				},
+				"value": true
 			}
 		}
-	}
+	]
 }
