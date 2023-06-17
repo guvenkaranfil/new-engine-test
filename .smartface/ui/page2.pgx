@@ -20,10 +20,9 @@
 			"version": "0.13.0"
 		},
 		{
-			"className": ".statusBar",
+			"className": ".statusBar #page2-statusBar",
 			"id": "f351-8558-564b-dc58",
 			"props": {
-				"backgroundColor": "#00a1f1",
 				"children": [],
 				"name": "statusBar",
 				"parent": "3cf2-3cca-6e66-ecaf"
@@ -50,10 +49,8 @@
 			"id": "9674-03c4-b930-da3a",
 			"props": {
 				"children": [],
-				"color": "rgba( 44, 95, 120, 1 )",
 				"name": "activityIndicator1",
-				"parent": "3cf2-3cca-6e66-ecaf",
-				"size": "large"
+				"parent": "3cf2-3cca-6e66-ecaf"
 			},
 			"type": "ActivityIndicator",
 			"userProps": {
@@ -67,12 +64,7 @@
 			"props": {
 				"children": [],
 				"name": "switch1",
-				"parent": "3cf2-3cca-6e66-ecaf",
-				"thumbColor": "rgba( 80, 227, 194, 1 )",
-				"trackColor": {
-					"false": "rgba( 181, 38, 38, 1 )",
-					"true": "rgba( 248, 231, 28, 1 )"
-				}
+				"parent": "3cf2-3cca-6e66-ecaf"
 			},
 			"type": "Switch",
 			"userProps": {
@@ -102,12 +94,7 @@
 			"props": {
 				"children": [],
 				"name": "switch2",
-				"parent": "910e-1be3-c257-fa59",
-				"thumbColor": "rgba( 65, 117, 5, 1 )",
-				"trackColor": {
-					"true": "rgba( 248, 231, 28, 1 )"
-				},
-				"value": true
+				"parent": "910e-1be3-c257-fa59"
 			},
 			"type": "Switch",
 			"userProps": {

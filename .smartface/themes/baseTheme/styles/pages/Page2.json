@@ -56,7 +56,7 @@
   },
   "#page2-view1": {
     "position": "relative",
-    "display": "none",
+    "display": "flex",
     "backgroundColor": "rgba( 65, 117, 5, 0.41 )",
     "opacity": 0.55,
     "shadowOffset": {
