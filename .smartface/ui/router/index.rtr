@@ -12,13 +12,14 @@
 				"path": "/",
 				"x": 62.312034012839035,
 				"y": -335.9367188115981,
-				"to": "pages"
+				"to": "pagesStack"
 			},
 			"children": [
 				"b34211fd-38db-48fe-8b4c-ee6205aa9501",
 				"972c4d22-df64-49b1-908f-d74c0e6017a8",
 				"15cf0444-33de-4f80-9094-58e9ad76631c",
-				"dbd0fcc0-3fee-460e-be32-5cb3fa961947"
+				"dbd0fcc0-3fee-460e-be32-5cb3fa961947",
+				"37ed47ab-bc62-40ca-a95c-852bb274ca3d"
 			]
 		},
 		"libAppRouter": {
@@ -38,16 +39,15 @@
 			"id": "b34211fd-38db-48fe-8b4c-ee6205aa9501",
 			"type": "StackRouter",
 			"isContainer": true,
-			"name": "pages",
+			"name": "pagesStack",
 			"children": [
 				"3e67f3b2-ab83-458a-8876-50f1291d03e4",
 				"d416bbad-1c8b-4f36-a56d-830d14233977",
-				"bebcc60d-2536-4d49-9acc-c48cb5cae190",
-				"020d9fc9-75a9-4867-9376-5a99a5e479dd"
+				"bebcc60d-2536-4d49-9acc-c48cb5cae190"
 			],
 			"isDirty": false,
 			"props": {
-				"path": "pages",
+				"path": "pagesStack",
 				"x": 62.312034012839035,
 				"y": -215.9367188115981,
 				"homeRoute": "page1",
@@ -89,13 +89,13 @@
 			"id": "bebcc60d-2536-4d49-9acc-c48cb5cae190",
 			"type": "StackRouter",
 			"isContainer": true,
-			"name": "page3",
+			"name": "page3Stack",
 			"children": [
 				"6813f470-2e07-4479-afd3-89d39573d168"
 			],
 			"isDirty": false,
 			"props": {
-				"path": "page3",
+				"path": "page3Stack",
 				"modal": true,
 				"x": 362.31203401283904,
 				"y": -95.9367188115981,
@@ -119,25 +119,6 @@
 			},
 			"parent": "bebcc60d-2536-4d49-9acc-c48cb5cae190"
 		},
-		"020d9fc9-75a9-4867-9376-5a99a5e479dd": {
-			"id": "020d9fc9-75a9-4867-9376-5a99a5e479dd",
-			"type": "Route",
-			"isContainer": false,
-			"name": "libraryRoute",
-			"children": [],
-			"props": {
-				"path": "route1",
-				"x": 347.31203401283904,
-				"y": -1.936718811598098,
-				"page": "page1"
-			},
-			"parent": "b34211fd-38db-48fe-8b4c-ee6205aa9501",
-			"isDirty": false,
-			"source": {
-				"id": "c9b99a5e-2e3b-479c-af18-323ee4881127"
-			},
-			"isLib": true
-		},
 		"972c4d22-df64-49b1-908f-d74c0e6017a8": {
 			"id": "972c4d22-df64-49b1-908f-d74c0e6017a8",
 			"type": "StackRouter",
@@ -152,8 +133,8 @@
 				"path": "stackRouter1",
 				"x": 181.31203401283904,
 				"y": -194.9367188115981,
-				"homeRoute": "route1",
-				"to": "route1"
+				"homeRoute": "route1withoutpage",
+				"to": "route1withoutpage"
 			},
 			"parent": "appRouter"
 		},
@@ -161,11 +142,11 @@
 			"id": "15060717-2191-433d-87b9-afa2d9e84ce6",
 			"type": "Route",
 			"isContainer": false,
-			"name": "route1",
+			"name": "route1withoutpage",
 			"children": [],
 			"isDirty": false,
 			"props": {
-				"path": "route1",
+				"path": "route1withoutpage",
 				"x": 181.31203401283904,
 				"y": -74.9367188115981
 			},
@@ -175,11 +156,11 @@
 			"id": "168e62a5-ee98-4b1e-84ba-739b002a14aa",
 			"type": "Route",
 			"isContainer": false,
-			"name": "route2",
+			"name": "route2withoutpage",
 			"children": [],
 			"isDirty": false,
 			"props": {
-				"path": "route2",
+				"path": "route2withoutpage",
 				"x": 466.31203401283904,
 				"y": 50.0632811884019
 			},
@@ -270,6 +251,21 @@
 				"page": "page2"
 			},
 			"parent": "b3e23c82-53c2-4824-8b22-55498f154601"
+		},
+		"37ed47ab-bc62-40ca-a95c-852bb274ca3d": {
+			"id": "37ed47ab-bc62-40ca-a95c-852bb274ca3d",
+			"type": "Route",
+			"isContainer": false,
+			"name": "outsideRoute",
+			"children": [],
+			"isDirty": false,
+			"props": {
+				"path": "route1",
+				"x": 349.31203401283904,
+				"y": -109.9367188115981,
+				"page": "page1"
+			},
+			"parent": "appRouter"
 		}
 	}
 }
