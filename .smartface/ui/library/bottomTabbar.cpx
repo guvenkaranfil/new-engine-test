@@ -1,11 +1,14 @@
 {
 	"components": [
 		{
-			"className": ".bottomTabbar",
-			"id": "43c8-8d69-97bc-a3c6",
+			"className": ".sf-bottomTabbar .bottomTabbar",
+			"hiddenComponent": false,
+			"id": "9bba-1b7f-a72e-ec49",
 			"props": {
 				"children": [
-					"da88-3e14-5be3-a766"
+					"96cb-58a1-0024-58f2",
+					"2730-b42f-f9d6-af79",
+					"cad7-b85b-5608-9c36"
 				],
 				"name": "bottomTabbar",
 				"parent": "57f4-201f-4bfc-5fc6"
@@ -14,21 +17,72 @@
 				"page": "__library__"
 			},
 			"type": "BottomTabbar",
-			"userProps": {}
+			"userProps": {
+				"backgroundColor": "#FF0000",
+				"itemColor": {
+					"normal": "#00A1F1",
+					"selected": "#FFFFFF"
+				}
+			}
 		},
 		{
-			"className": ".tabbarItem",
-			"id": "da88-3e14-5be3-a766",
+			"className": ".sf-tabbarItem .bottomTabbar-tabbarItems.tabBarItem1",
+			"id": "96cb-58a1-0024-58f2",
 			"props": {
 				"children": [],
 				"name": "tabbarItem1",
-				"parent": "43c8-8d69-97bc-a3c6"
+				"parent": "9bba-1b7f-a72e-ec49"
 			},
 			"source": {
 				"page": "__library__"
 			},
 			"type": "TabbarItem",
-			"userProps": {}
+			"userProps": {
+				"icon": {
+					"normal": "home.png",
+					"selected": "close_icon.png"
+				}
+			}
+		},
+		{
+			"className": ".sf-tabbarItem .bottomTabbar-tabbarItems.tabbarItem2",
+			"id": "2730-b42f-f9d6-af79",
+			"oldName": "tabBarItem2",
+			"props": {
+				"children": [],
+				"name": "tabbarItem11",
+				"parent": "9bba-1b7f-a72e-ec49"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TabbarItem",
+			"userProps": {
+				"icon": {
+					"normal": "smartface.png",
+					"selected": "keyboardlayout_up.png"
+				}
+			}
+		},
+		{
+			"className": ".sf-tabbarItem .bottomTabbar-tabbarItems.tabBarItem3",
+			"id": "cad7-b85b-5608-9c36",
+			"oldName": "tabBarItem3",
+			"props": {
+				"children": [],
+				"name": "tabbarItem12",
+				"parent": "9bba-1b7f-a72e-ec49"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TabbarItem",
+			"userProps": {
+				"icon": {
+					"normal": "arrow_back.png",
+					"selected": "keyboardlayout_down.png"
+				}
+			}
 		}
 	]
 }

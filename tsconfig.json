@@ -10,6 +10,7 @@
             "@smartface-generated/*": [".smartface/generated/*"],
             "@app/*": ["app/*"]
         },
+        "forceConsistentCasingInFileNames": false
     },
     "include": [
         "./.smartface/**/*",

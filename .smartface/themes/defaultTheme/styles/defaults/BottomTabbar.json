@@ -7,7 +7,7 @@
         "justifyContent": "flex-start",
         "flexWrap": "nowrap",
         "flexDirection": "row",
-        "positionType": "relative",
+        "position": "relative",
         "flex": 1,
         "backgroundColor": "rgba( 74, 144, 226, 1 )",
         "itemColor": {
