@@ -10,10 +10,10 @@
 					"4473-4cf8-d807-5db0",
 					"93f8-c304-8c1f-d8c2",
 					"c1c7-05e2-c337-f91e",
+					"9a31-65e3-9e39-291c",
 					"f8ff-23b2-7680-583e"
 				],
 				"name": "page1",
-				"orientation": "PORTRAIT",
 				"parent": null
 			},
 			"type": "Page",
@@ -24,8 +24,8 @@
 			"className": ".statusBar",
 			"id": "075d-1d8b-8605-fcd3",
 			"props": {
+				"backgroundColor": "#00a1f1",
 				"children": [],
-				"isRemovable": false,
 				"name": "statusBar",
 				"parent": "75bf-4d11-c702-60d6"
 			},
@@ -37,7 +37,6 @@
 			"id": "4473-4cf8-d807-5db0",
 			"props": {
 				"children": [],
-				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "75bf-4d11-c702-60d6",
 				"title": "page1"
@@ -68,6 +67,20 @@
 			},
 			"type": "Image",
 			"userProps": {}
+		},
+		{
+			"className": ".text",
+			"id": "9a31-65e3-9e39-291c",
+			"props": {
+				"children": [],
+				"name": "text2",
+				"parent": "75bf-4d11-c702-60d6",
+				"text": "asdasdasdasd testst"
+			},
+			"type": "Text",
+			"userProps": {
+				"text": "asdasdasdasd testst"
+			}
 		},
 		{
 			"className": ".pressable",
@@ -105,8 +118,7 @@
 			"props": {
 				"children": [],
 				"name": "switch1",
-				"parent": "f8ff-23b2-7680-583e",
-				"toggle": true
+				"parent": "f8ff-23b2-7680-583e"
 			},
 			"type": "Switch",
 			"userProps": {
@@ -118,6 +130,7 @@
 			"id": "f6ac-ca06-fe27-16fd",
 			"props": {
 				"children": [],
+				"color": "#00a1f1",
 				"name": "activityIndicator1",
 				"parent": "f8ff-23b2-7680-583e"
 			},
@@ -142,6 +155,7 @@
 			"id": "dc63-ead4-79ff-1d1b",
 			"props": {
 				"children": [],
+				"color": "#00a1f1",
 				"name": "activityIndicator2",
 				"parent": "17b4-0a4f-e811-623a"
 			},

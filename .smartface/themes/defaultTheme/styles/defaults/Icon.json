@@ -2,12 +2,10 @@
     ".icon": {
         "height": 50,
         "width": 50,
-        "maxLines": 0,
         "color": "#00a1f1",
         "textAlign": "center",
         "fontSize": 42,
         "fontFamily": "FontAwesome5FreeSolid",
-        "glyph": "",
         "alignSelf": "auto",
         "position": "relative"
     }

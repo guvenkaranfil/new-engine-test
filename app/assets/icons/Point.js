@@ -1,10 +1,10 @@
 import * as React from 'react';
-import Svg, {Rect} from 'react-native-svg';
+import Svg, { Rect } from 'react-native-svg';
 const SvgPoint = props => (
   <Svg
     xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
+    width="-"
+    height="-"
     fill="none"
     {...props}>
     <Rect

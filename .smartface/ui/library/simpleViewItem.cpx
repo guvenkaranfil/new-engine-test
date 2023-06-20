@@ -1,48 +1,49 @@
 {
 	"components": [
 		{
-			"className": ".listViewItem .simpleListviewItem",
+			"className": " .simple_listviewItem",
 			"hiddenComponent": false,
 			"id": "1841-ff9a-b968-028d",
-			"initialized": true,
+			"initialized": false,
 			"props": {
 				"children": [
 					"24ca-f21f-dfb6-5dc9",
 					"8474-887d-3102-405e",
 					"bd8f-5e00-4110-7fd7"
 				],
-				"name": "simple_listviewItem",
+				"name": "simpleViewItem",
 				"parent": "57f4-201f-4bfc-5fc6"
 			},
 			"source": {
 				"page": "__library__"
 			},
-			"type": "ListViewItem",
+			"type": "View",
 			"userProps": {
-				"flexProps": {},
-				"left": 0,
-				"top": 361.9047619047619
+				"left": 22.89,
+				"top": 550.6
 			}
 		},
 		{
 			"className": ".label .simpleListviewItem_title",
 			"id": "24ca-f21f-dfb6-5dc9",
 			"props": {
-				"autoHeight": 51.086956521739125,
-				"autoWidth": 134.91847826086956,
 				"children": [],
+				"ellipsizeMode": "tail",
 				"name": "lblTitle",
+				"numberOfLines": 1,
 				"parent": "1841-ff9a-b968-028d",
 				"text": "ListView Cell Title"
 			},
 			"source": {
 				"page": "__library__"
 			},
-			"type": "Label",
+			"type": "Text",
 			"userProps": {
 				"autoHeight": 51.086956521739125,
 				"autoWidth": 134.91847826086956,
+				"ellipsizeMode": "tail",
 				"marginLeft": 16,
+				"numberOfLines": 1,
 				"text": "ListView Cell Title"
 			}
 		},
@@ -50,8 +51,6 @@
 			"className": ".label .simpleListviewItem_chevron",
 			"id": "8474-887d-3102-405e",
 			"props": {
-				"autoHeight": 51.086956521739125,
-				"autoWidth": 10.478940217391305,
 				"children": [],
 				"name": "lblChevron",
 				"parent": "1841-ff9a-b968-028d",
@@ -60,10 +59,8 @@
 			"source": {
 				"page": "__library__"
 			},
-			"type": "Label",
+			"type": "Text",
 			"userProps": {
-				"autoHeight": 51.086956521739125,
-				"autoWidth": 10.478940217391305,
 				"marginRight": 16,
 				"text": ""
 			}
@@ -79,7 +76,7 @@
 			"source": {
 				"page": "__library__"
 			},
-			"type": "FlexLayout",
+			"type": "View",
 			"userProps": {}
 		}
 	]

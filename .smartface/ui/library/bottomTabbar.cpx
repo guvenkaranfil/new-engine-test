@@ -1,10 +1,12 @@
 {
 	"components": [
 		{
-			"className": " .bottomTabbar",
-			"id": "92ca-d60c-7ad7-8c4c",
+			"className": ".bottomTabbar",
+			"id": "43c8-8d69-97bc-a3c6",
 			"props": {
-				"children": [],
+				"children": [
+					"da88-3e14-5be3-a766"
+				],
 				"name": "bottomTabbar",
 				"parent": "57f4-201f-4bfc-5fc6"
 			},
@@ -12,6 +14,20 @@
 				"page": "__library__"
 			},
 			"type": "BottomTabbar",
+			"userProps": {}
+		},
+		{
+			"className": ".tabbarItem",
+			"id": "da88-3e14-5be3-a766",
+			"props": {
+				"children": [],
+				"name": "tabbarItem1",
+				"parent": "43c8-8d69-97bc-a3c6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TabbarItem",
 			"userProps": {}
 		}
 	]

@@ -1,12 +1,12 @@
 {
     ".page": {
+        "flex": 1,
         "alignContent": "stretch",
         "alignItems": "stretch",
         "direction": "inherit",
         "flexDirection": "column",
         "flexWrap": "nowrap",
         "justifyContent": "flex-start",
-        "backgroundColor": "#FFFFFF",
-        "orientation": "PORTRAIT"
+        "backgroundColor": "#FFFFFF"
     }
 }

@@ -1,7 +1,6 @@
 {
     ".separator": {
-        "backgroundColor": "${separator}",
-        "width": null
+        "backgroundColor": "${separator}"
     },
     ".separator.relative": {
         "height": 1,

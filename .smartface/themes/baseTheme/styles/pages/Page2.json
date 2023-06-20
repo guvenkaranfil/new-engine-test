@@ -17,7 +17,6 @@
     "fontFamily": "SFProText",
     "height": 90,
     "left": 0,
-    "multiline": true,
     "textAlign": "center",
     "color": "${mainTextColor}",
     "top": 0
@@ -27,20 +26,17 @@
     "position": "relative",
     "left": 0,
     "top": 0,
-    "width": null,
     "marginBottom": 10
   },
   "#page2-btnOpenModal": {
     "alignSelf": "auto",
     "position": "relative",
     "left": 0,
-    "top": 0,
-    "width": null
+    "top": 0
   },
   "#page2-btnLanguage": {
     "alignSelf": "auto",
     "position": "relative",
-    "width": null,
     "marginBottom": 10,
     "marginTop": 10,
     "left": -1.2,
@@ -51,12 +47,12 @@
     "alignItems": "stretch",
     "backgroundColor": "rgba( 162, 32, 32, 1 )",
     "alignSelf": "flex-end",
-    "width": "50",
+    "width": 50,
     "position": "relative"
   },
   "#page2-view1": {
     "position": "relative",
-    "display": "none",
+    "display": "flex",
     "backgroundColor": "rgba( 65, 117, 5, 0.41 )",
     "opacity": 0.55,
     "shadowOffset": {
@@ -65,12 +61,40 @@
     },
     "shadowRadius": 4,
     "shadowOpacity": 0.39,
-    "shadowColor": "rgba( 142, 56, 56, 1 )"
+    "shadowColor": "rgba( 142, 56, 56, 1 )",
+    "height": 250,
+    "flexDirection": "column",
+    "width": null
   },
   "#page2-switch1": {
     "toggle": true
   },
   "#page2-switch2": {
     "toggle": true
+  },
+  "#page2-switch3": {
+    "toggle": true
+  },
+  "#page2-text1": {
+    "backgroundColor": "rgba( 139, 87, 42, 1 )",
+    "textAlign": "justify",
+    "color": "rgba( 255, 255, 255, 1 )",
+    "left": 27.71
+  },
+  "#page2-scrollView1": {
+    "left": -96.97,
+    "top": -83.33,
+    "height": null
+  },
+  "#page2-flatList1": {
+    "backgroundColor": "rgba( 169, 37, 37, 0.48 )"
+  },
+  "#page2-image1": {
+    "resizeMode": "contain",
+    "flex": 1,
+    "width": 200,
+    "height": 251,
+    "backgroundColor": "rgba( 206, 72, 72, 1 )",
+    "tintColor": "rgba( 248, 231, 28, 1 )"
   }
 }
