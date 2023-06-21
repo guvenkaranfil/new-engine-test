@@ -7,7 +7,7 @@
     "textAlign": "center"
   },
   "#newPage002-textInput1": {
-    "height": "50",
+    "height": 50,
     "backgroundColor": "rgba( 198, 51, 51, 1 )"
   },
   "#newPage002-view1": {

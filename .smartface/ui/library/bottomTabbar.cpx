@@ -31,7 +31,11 @@
 			"props": {
 				"children": [],
 				"name": "tabbarItem1",
-				"parent": "9bba-1b7f-a72e-ec49"
+				"parent": "9bba-1b7f-a72e-ec49",
+				"icon": {
+					"normal": "home.png",
+					"selected": "close_icon.png"
+				}
 			},
 			"source": {
 				"page": "__library__"
@@ -51,7 +55,11 @@
 			"props": {
 				"children": [],
 				"name": "tabbarItem11",
-				"parent": "9bba-1b7f-a72e-ec49"
+				"parent": "9bba-1b7f-a72e-ec49",
+				"icon": {
+					"normal": "smartface.png",
+					"selected": "keyboardlayout_up.png"
+				}
 			},
 			"source": {
 				"page": "__library__"
@@ -71,7 +79,11 @@
 			"props": {
 				"children": [],
 				"name": "tabbarItem12",
-				"parent": "9bba-1b7f-a72e-ec49"
+				"parent": "9bba-1b7f-a72e-ec49",
+				"icon": {
+					"normal": "arrow_back.png",
+					"selected": "keyboardlayout_down.png"
+				}
 			},
 			"source": {
 				"page": "__library__"
