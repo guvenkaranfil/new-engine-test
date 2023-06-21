@@ -15,11 +15,7 @@
 				"to": "pagesStack"
 			},
 			"children": [
-				"b34211fd-38db-48fe-8b4c-ee6205aa9501",
-				"972c4d22-df64-49b1-908f-d74c0e6017a8",
-				"15cf0444-33de-4f80-9094-58e9ad76631c",
-				"dbd0fcc0-3fee-460e-be32-5cb3fa961947",
-				"37ed47ab-bc62-40ca-a95c-852bb274ca3d"
+				"b34211fd-38db-48fe-8b4c-ee6205aa9501"
 			]
 		},
 		"libAppRouter": {
@@ -42,8 +38,7 @@
 			"name": "pagesStack",
 			"children": [
 				"3e67f3b2-ab83-458a-8876-50f1291d03e4",
-				"d416bbad-1c8b-4f36-a56d-830d14233977",
-				"bebcc60d-2536-4d49-9acc-c48cb5cae190"
+				"d416bbad-1c8b-4f36-a56d-830d14233977"
 			],
 			"isDirty": false,
 			"props": {
