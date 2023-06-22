@@ -114,7 +114,7 @@
 			"id": "a9c2-e29f-f9a9-633e",
 			"props": {
 				"children": [
-					"e345-f531-b6ec-0d60",
+					"af37-7757-5594-a680",
 					"47b1-7129-b53e-bb87"
 				],
 				"name": "view1",
@@ -126,16 +126,16 @@
 		{
 			"className": ".view .genderComp",
 			"hiddenComponent": false,
-			"id": "e345-f531-b6ec-0d60",
+			"id": "af37-7757-5594-a680",
 			"props": {
 				"children": [],
-				"name": "genderComp",
+				"name": "genderCompMale",
 				"parent": "a9c2-e29f-f9a9-633e"
 			},
 			"source": {
 				"page": "__library__",
-				"type": "genderComp",
-				"id": "85d4-7e40-0f15-bc8a"
+				"type": "genderCompMale",
+				"id": "a8e7-b8d9-8e50-c873"
 			},
 			"type": "View",
 			"userProps": {}

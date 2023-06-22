@@ -46,6 +46,9 @@
     "alignItems": "center"
   },
   "#pgRegister-genderComp1": {
-    "marginLeft": 16
+    "marginLeft": 8
+  },
+  "#pgRegister-genderComp": {
+    "marginRight": 8
   }
 }

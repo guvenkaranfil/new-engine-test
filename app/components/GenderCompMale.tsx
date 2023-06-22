@@ -1,12 +1,10 @@
 import React from 'react';
-import GenderCompDesign from '@smartface-generated/components/GenderComp';
+import GenderCompMaleDesign from '@smartface-generated/components/GenderCompMale';
 
 export default (props: any) => {
+    return <GenderCompMaleDesign genderCompMale={props}
 
-    console.log('Props: ', props.isActive);
 
-    return <GenderCompDesign
-        genderComp={props}
         vimage={{
             classList: props.isActive ? ['.genderCompMale-vimage.active'] : []
         }}
