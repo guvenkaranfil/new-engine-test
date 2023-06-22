@@ -6,39 +6,22 @@ import { View, _Text } from 'react-native';
 export default (props: any) => {
   const [switcState, setSwitchState] = useState(true);
   console.log('switch', switcState);
+  const [text, setText] = useState('');
 
-<<<<<<< HEAD
-    const [switcState, setSwitchState] = useState(true);
-    const [text, setText] = useState('');
+  console.log('switch', switcState);
 
-    console.log('switch', switcState);
-
-    return <Page2Design switch1={{
-        value: switcState,
-        onValueChange: setSwitchState
-    }}
-        textInput1={{
-            onChangeText: (_text) => {
-                console.log('TEXT: ', _text);
-                setText(_text)
-            },
-            value: text
-        }}
-        flatList1={
-            {
-                classList: [],
-                data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 0],
-                renderItem: ({ item, index }: any) => (<SimpleViewItem data={item} index={index} />),
-                ListFooterComponent: (<View style={{ height: 200, width: 100, backgroundColor: 'black' }}></View>)
-            }
-        }
-    />;
-=======
   return (
     <Page2Design
       switch1={{
         value: switcState,
         onValueChange: setSwitchState,
+      }}
+      textInput1={{
+        onChangeText: _text => {
+          console.log('TEXT: ', _text);
+          setText(_text);;
+        },
+        value: text,
       }}
       flatList1={{
         classList: [],
@@ -47,9 +30,14 @@ export default (props: any) => {
           <SimpleViewItem data={item} index={index} />
         ),
         ListFooterComponent: (
-          <View style={{ height: 200, width: 100, backgroundColor: 'red' }}></View> ),
+          <View
+            style={{
+              height: 200,
+              width: 100,
+              backgroundColor: 'black',
+            }}></View>
+        ),
       }}
     />
   );
->>>>>>> 2eb2df5d15ce26e12feb2d165606df9328a4d692
 };

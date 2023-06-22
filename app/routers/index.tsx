@@ -11,31 +11,23 @@ import React from 'react';
 import $$AppRouter from '@smartface-generated/routers';
 
 import { NavigationContainer } from '@react-navigation/native';
-<<<<<<< HEAD
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import pgRegister from '@app/pages/pgRegister';
 
-
 const Stack = createNativeStackNavigator();
-
-
-const MainRouter = () => {
-    return (
-        <NavigationContainer>
-            <Stack.Navigator>
-                <Stack.Screen name="pgRegister" options={{ headerShown: false }} component={pgRegister} />
-            </Stack.Navigator>
-        </NavigationContainer>
-    );
-=======
 
 const MainRouter = () => {
   return (
     <NavigationContainer>
-      <$$AppRouter />
+      <Stack.Navigator>
+        <Stack.Screen
+          name="pgRegister"
+          options={{ headerShown: false }}
+          component={pgRegister}
+        />
+      </Stack.Navigator>
     </NavigationContainer>
   );
->>>>>>> 2eb2df5d15ce26e12feb2d165606df9328a4d692
 };
 
 export default MainRouter;
