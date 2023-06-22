@@ -70,19 +70,20 @@
     "justifyContent": "center"
   },
   ".simple_listviewItem": {
-    "height": 40,
     "position": "relative",
-    "backgroundColor": "rgba( 248, 231, 28, 0.28 )",
+    "backgroundColor": "rgba( 255, 255, 255, 0 )",
     "flexDirection": "row",
-    "alignItems": "center",
+    "alignItems": "stretch",
     "justifyContent": "flex-start",
-    "width": null
+    "height": 100,
+    "alignSelf": "stretch"
   },
   ".simpleListviewItem_title": {
     "flex": 1,
     "height": null,
     "opacity": 1,
     "fontSize": 12,
-    "fontFamily": "Inter-ExtraBold"
+    "fontFamily": "Inter-ExtraBold",
+    "color": "rgba( 0, 0, 0, 1 )"
   }
 }

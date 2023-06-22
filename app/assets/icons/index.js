@@ -1,3 +1,4 @@
+export { default as Logo } from './Logo';
 export { default as SfGenImgP } from './SfGenImgP';
 export { default as SfGenImgQ } from './SfGenImgQ';
 export { default as ArrowDown } from './ArrowDown';

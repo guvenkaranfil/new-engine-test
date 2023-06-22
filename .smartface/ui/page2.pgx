@@ -57,10 +57,13 @@
 				"children": [],
 				"color": "#00a1f1",
 				"name": "activityIndicator1",
-				"parent": "3cf2-3cca-6e66-ecaf"
+				"parent": "3cf2-3cca-6e66-ecaf",
+				"size": "small"
 			},
 			"type": "ActivityIndicator",
-			"userProps": {}
+			"userProps": {
+				"size": "small"
+			}
 		},
 		{
 			"className": ".view #page2-view1",
@@ -80,7 +83,7 @@
 			"id": "25d2-61b7-f60d-88fb",
 			"props": {
 				"children": [
-					"4b0c-2a6a-96a9-aac1"
+					"eb7c-2edf-fece-ac16"
 				],
 				"name": "flatList1",
 				"parent": "0e28-e113-6408-06b3"
@@ -91,7 +94,7 @@
 		{
 			"className": " .simple_listviewItem",
 			"hiddenComponent": false,
-			"id": "4b0c-2a6a-96a9-aac1",
+			"id": "eb7c-2edf-fece-ac16",
 			"initialized": false,
 			"props": {
 				"children": [],
@@ -107,13 +110,15 @@
 			"userProps": {}
 		},
 		{
-			"className": ".view",
+			"className": ".view #page2-view2",
 			"id": "87d6-8443-dac6-4a2e",
 			"props": {
 				"children": [
 					"a593-49a6-5f3f-b094",
 					"1c22-fd59-557f-052f",
-					"7ce0-17e2-eacc-c81b"
+					"7ce0-17e2-eacc-c81b",
+					"5b89-eecc-cff1-9a63",
+					"53bc-580c-95a1-e351"
 				],
 				"name": "view2",
 				"parent": "3cf2-3cca-6e66-ecaf"
@@ -127,22 +132,38 @@
 			"props": {
 				"children": [],
 				"name": "switch1",
-				"parent": "87d6-8443-dac6-4a2e"
+				"parent": "87d6-8443-dac6-4a2e",
+				"thumbColor": "rgba( 245, 166, 35, 1 )",
+				"trackColor": {
+					"false": "rgba( 203, 63, 63, 1 )",
+					"true": "rgba( 248, 231, 28, 1 )"
+				},
+				"value": true
 			},
 			"type": "Switch",
-			"userProps": {}
+			"userProps": {
+				"thumbColor": "rgba( 245, 166, 35, 1 )",
+				"trackColor": {
+					"false": "rgba( 203, 63, 63, 1 )",
+					"true": "rgba( 248, 231, 28, 1 )"
+				},
+				"value": true
+			}
 		},
 		{
-			"className": ".activityIndicator",
+			"className": ".activityIndicator #page2-activityIndicator2",
 			"id": "1c22-fd59-557f-052f",
 			"props": {
 				"children": [],
 				"color": "#00a1f1",
 				"name": "activityIndicator2",
-				"parent": "87d6-8443-dac6-4a2e"
+				"parent": "87d6-8443-dac6-4a2e",
+				"size": "large"
 			},
 			"type": "ActivityIndicator",
-			"userProps": {}
+			"userProps": {
+				"size": "large"
+			}
 		},
 		{
 			"className": ".icon",
@@ -158,6 +179,36 @@
 			"type": "Icon",
 			"userProps": {
 				"source": "svgs/__sf_gen_img_p.svg"
+			}
+		},
+		{
+			"className": ".text #page2-text1",
+			"id": "5b89-eecc-cff1-9a63",
+			"props": {
+				"children": [],
+				"name": "text1",
+				"parent": "87d6-8443-dac6-4a2e",
+				"text": "Lorem Ipsum"
+			},
+			"type": "Text",
+			"userProps": {
+				"text": "Lorem Ipsum"
+			}
+		},
+		{
+			"className": ".textBox #page2-textInput1",
+			"id": "53bc-580c-95a1-e351",
+			"props": {
+				"children": [],
+				"name": "textInput1",
+				"parent": "87d6-8443-dac6-4a2e",
+				"placeholder": "asdasdasdasdasd",
+				"text": "sdsdsdsdsdsdsdsd"
+			},
+			"type": "TextInput",
+			"userProps": {
+				"placeholder": "asdasdasdasdasd",
+				"text": "sdsdsdsdsdsdsdsd"
 			}
 		},
 		{
