@@ -8,10 +8,10 @@
 //------------------------------------------------------------------------------
 
 import React from 'react';
-import $$NestedStackLibrary from '@smartface-generated/routers/components/NestedStackLibrary';
+import $$EmptyStack from '@smartface-generated/routers/components/EmptyStack';
 
-const NestedStackLibrary = () => {
-  return <$$NestedStackLibrary />;
+const EmptyStack = () => {
+  return <$$EmptyStack />;
 };
 
-export default NestedStackLibrary;
+export default EmptyStack;

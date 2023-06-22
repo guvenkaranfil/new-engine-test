@@ -4,7 +4,6 @@ import GenderCompMaleDesign from '@smartface-generated/components/GenderCompMale
 export default (props: any) => {
     return <GenderCompMaleDesign genderCompMale={props}
 
-
         vimage={{
             classList: props.isActive ? ['.genderCompMale-vimage.active'] : []
         }}
