@@ -8,7 +8,9 @@
 				"children": [
 					"075d-1d8b-8605-fcd3",
 					"4473-4cf8-d807-5db0",
+					"564a-6753-5b9d-6190",
 					"93f8-c304-8c1f-d8c2",
+					"a31e-8028-9ec9-df01",
 					"c1c7-05e2-c337-f91e",
 					"9a31-65e3-9e39-291c",
 					"f8ff-23b2-7680-583e"
@@ -47,6 +49,23 @@
 			}
 		},
 		{
+			"className": ".view .genderComp",
+			"hiddenComponent": false,
+			"id": "564a-6753-5b9d-6190",
+			"props": {
+				"children": [],
+				"name": "genderCompMale",
+				"parent": "75bf-4d11-c702-60d6"
+			},
+			"source": {
+				"page": "__library__",
+				"type": "genderCompMale",
+				"id": "a8e7-b8d9-8e50-c873"
+			},
+			"type": "View",
+			"userProps": {}
+		},
+		{
 			"className": ".text #newPage002-text1",
 			"id": "93f8-c304-8c1f-d8c2",
 			"props": {
@@ -55,6 +74,17 @@
 				"parent": "75bf-4d11-c702-60d6"
 			},
 			"type": "Text",
+			"userProps": {}
+		},
+		{
+			"className": ".pressable #page1-pressable2",
+			"id": "a31e-8028-9ec9-df01",
+			"props": {
+				"children": [],
+				"name": "pressable2",
+				"parent": "75bf-4d11-c702-60d6"
+			},
+			"type": "Pressable",
 			"userProps": {}
 		},
 		{

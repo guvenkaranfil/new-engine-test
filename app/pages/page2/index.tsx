@@ -19,7 +19,7 @@ export default (props: any) => {
       textInput1={{
         onChangeText: _text => {
           console.log('TEXT: ', _text);
-          setText(_text);;
+          setText(_text);
         },
         value: text,
       }}
@@ -35,7 +35,8 @@ export default (props: any) => {
               height: 200,
               width: 100,
               backgroundColor: 'black',
-            }}></View>
+            }}
+          />
         ),
       }}
     />

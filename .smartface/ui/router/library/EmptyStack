@@ -12,7 +12,8 @@
 			"x": 329.75957035847955,
 			"y": -243.0644170143849,
 			"homeRoute": "route1",
-			"to": "route1"
+			"to": "route1",
+			"modal": false
 		},
 		"parent": "libAppRouter"
 	},

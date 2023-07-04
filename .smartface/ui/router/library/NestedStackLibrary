@@ -58,8 +58,8 @@
 		"props": {
 			"path": "stackRouter1",
 			"modal": true,
-			"x": 38.222822028858076,
-			"y": 22.395827974479253,
+			"x": 68.22282202885808,
+			"y": -70.10417202552074,
 			"homeRoute": "innerroute",
 			"to": "innerroute"
 		},

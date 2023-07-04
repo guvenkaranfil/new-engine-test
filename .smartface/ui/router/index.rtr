@@ -47,8 +47,8 @@
 			"isDirty": false,
 			"props": {
 				"path": "bottomTabBarRouter1",
-				"x": 359.81203401283904,
-				"y": -407.4367188115981,
+				"x": 47.403355511852794,
+				"y": -41.68997324946789,
 				"to": "stackRouter1"
 			},
 			"parent": "appRouter"
@@ -108,15 +108,16 @@
 			"isContainer": true,
 			"name": "stackRouter2",
 			"children": [
-				"9052e6a0-9f66-404f-a8b1-4fff6b329c80"
+				"9052e6a0-9f66-404f-a8b1-4fff6b329c80",
+				"bce4bb6c-0486-4ff4-a9ee-ce098695a1a4"
 			],
 			"isDirty": false,
 			"props": {
 				"path": "stackRouter2",
 				"x": 638.312034012839,
 				"y": -275.4367188115981,
-				"homeRoute": "route1",
-				"to": "route1"
+				"homeRoute": "stack2route1",
+				"to": "stack2route1"
 			},
 			"parent": "dbd0fcc0-3fee-460e-be32-5cb3fa961947"
 		},
@@ -124,16 +125,50 @@
 			"id": "9052e6a0-9f66-404f-a8b1-4fff6b329c80",
 			"type": "Route",
 			"isContainer": false,
-			"name": "route1",
+			"name": "stack2route1",
 			"children": [],
 			"isDirty": false,
 			"props": {
-				"path": "route1",
+				"path": "stack2route1",
 				"x": 638.312034012839,
 				"y": -155.4367188115981,
 				"page": "page1"
 			},
 			"parent": "b8895acb-5f81-4fc0-bd1b-89bf26ce0d36"
+		},
+		"bce4bb6c-0486-4ff4-a9ee-ce098695a1a4": {
+			"id": "bce4bb6c-0486-4ff4-a9ee-ce098695a1a4",
+			"type": "StackRouter",
+			"isContainer": true,
+			"name": "stack2Router1",
+			"children": [
+				"83eaf535-d34d-4f9c-bd7d-e3eca53f9a0d"
+			],
+			"props": {
+				"path": "stack2Router1",
+				"modal": true,
+				"x": 788.312034012839,
+				"y": -155.4367188115981,
+				"homeRoute": "stack1route1",
+				"to": "stack1route1"
+			},
+			"parent": "b8895acb-5f81-4fc0-bd1b-89bf26ce0d36",
+			"isDirty": false
+		},
+		"83eaf535-d34d-4f9c-bd7d-e3eca53f9a0d": {
+			"id": "83eaf535-d34d-4f9c-bd7d-e3eca53f9a0d",
+			"type": "Route",
+			"isContainer": false,
+			"name": "stack1route1",
+			"children": [],
+			"props": {
+				"path": "stack1route1",
+				"x": 788.312034012839,
+				"y": -35.4367188115981,
+				"page": "pgRegister"
+			},
+			"parent": "bce4bb6c-0486-4ff4-a9ee-ce098695a1a4",
+			"isDirty": false
 		},
 		"fca2bd86-1038-4487-ad1e-40d36b7e78cd": {
 			"id": "fca2bd86-1038-4487-ad1e-40d36b7e78cd",
