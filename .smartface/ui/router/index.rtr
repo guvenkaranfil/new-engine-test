@@ -310,8 +310,8 @@
 			"children": [],
 			"props": {
 				"path": "nestedStackLibrary",
-				"x": 649.312034012839,
-				"y": -109.9367188115981,
+				"x": 300.73559923451523,
+				"y": 52.29792092635074,
 				"homeRoute": "mainRoute",
 				"to": "mainRoute"
 			},

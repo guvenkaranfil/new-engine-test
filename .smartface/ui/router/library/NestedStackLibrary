@@ -8,7 +8,8 @@
 			"917b668f-1aee-4a04-9a0c-726c070f97c9",
 			"8fff8af4-3a07-4bdc-84eb-15e3d72d0763",
 			"1e914b4d-506b-4680-a8fe-e39d930f4e92",
-			"949d7f82-5ae2-4743-b1cd-5bd14b75c514"
+			"949d7f82-5ae2-4743-b1cd-5bd14b75c514",
+			"d3c9fc2d-5ca4-4b01-917b-f2561ea710e6"
 		],
 		"props": {
 			"path": "nestedStackLibrary",
@@ -92,5 +93,25 @@
 			"page": "page1"
 		},
 		"parent": "510435a9-4959-4d92-8b69-ef3efbc22a09"
+	},
+	{
+		"id": "d3c9fc2d-5ca4-4b01-917b-f2561ea710e6",
+		"type": "StackRouter",
+		"isContainer": false,
+		"name": "emptyStack",
+		"children": [],
+		"props": {
+			"path": "emptyStack",
+			"x": 278.9769422961187,
+			"y": -9.547713228193402,
+			"homeRoute": "route1",
+			"to": "route1",
+			"modal": false
+		},
+		"parent": "510435a9-4959-4d92-8b69-ef3efbc22a09",
+		"source": {
+			"id": "dccddc45-b47d-42d2-be09-570625f4ca62"
+		},
+		"isLib": true
 	}
 ]
