@@ -11,7 +11,7 @@ export default (props: any) => {
             classList: props.isActive ? ['.genderCompMale-vimage.active'] : []
         }}
         text1={{
-            classList: props.isActive ? ['.genderComp-text1.active'] : []
+            classList: props.isActive ? ['.genderCompMale-text1.active'] : []
         }}
     />;
 };

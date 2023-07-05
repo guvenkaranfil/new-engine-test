@@ -3,8 +3,8 @@ import Svg, { Path } from 'react-native-svg';
 const SvgArrowRight = props => (
   <Svg
     xmlns="http://www.w3.org/2000/svg"
-    width="-"
-    height="-"
+    width={24}
+    height={24}
     fill="none"
     viewBox="0 0 9 14"
     {...props}>

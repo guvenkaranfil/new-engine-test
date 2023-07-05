@@ -10,7 +10,8 @@
         "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
         "convert-svg": "npx @svgr/cli -- icons/test.svg > icons/test.js",
         "svgr": "svgr ./app/assets/svgs -d ./app/assets/icons --native --icon - --ignore-existing",
-        "build:assets": "npx react-native-asset"
+        "build:assets": "npx react-native-asset",
+        "metro": "./node_modules/react-native/scripts/launchPackager.command"
     },
     "dependencies": {
         "@react-navigation/bottom-tabs": "^6.5.7",
