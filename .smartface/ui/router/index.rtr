@@ -42,11 +42,18 @@
 			],
 			"isDirty": false,
 			"props": {
+<<<<<<< HEAD
 				"path": "isLoggedIn",
 				"x": 366.65905158193357,
 				"y": -714.2811665089373,
 				"homeRoute": "route1",
 				"to": "route1"
+=======
+				"path": "bottomTabBarRouter1",
+				"x": 47.403355511852794,
+				"y": -41.68997324946789,
+				"to": "stackRouter1"
+>>>>>>> 7401023a0073042e9318df5b8b442def4f5f9fcd
 			},
 			"parent": "appRouter"
 		},
@@ -95,6 +102,222 @@
 			"isDirty": false,
 			"props": {
 				"path": "stackRouter1",
+<<<<<<< HEAD
+=======
+				"x": 488.31203401283904,
+				"y": -275.4367188115981,
+				"homeRoute": "btb1",
+				"to": "btb1"
+			},
+			"parent": "dbd0fcc0-3fee-460e-be32-5cb3fa961947"
+		},
+		"8eb860f1-03ee-4a71-8a25-e8ed68e424f6": {
+			"id": "8eb860f1-03ee-4a71-8a25-e8ed68e424f6",
+			"type": "Route",
+			"isContainer": false,
+			"name": "btb1",
+			"children": [],
+			"isDirty": false,
+			"props": {
+				"path": "btb1",
+				"x": 636.812034012839,
+				"y": -96.4367188115981,
+				"page": "page2"
+			},
+			"parent": "b3e23c82-53c2-4824-8b22-55498f154601"
+		},
+		"07f79b59-9ab1-4f1a-bb4c-b006a0045276": {
+			"id": "07f79b59-9ab1-4f1a-bb4c-b006a0045276",
+			"type": "Route",
+			"isContainer": false,
+			"name": "btb2",
+			"children": [],
+			"isDirty": false,
+			"props": {
+				"path": "btb2",
+				"x": 770.312034012839,
+				"y": -22.436718811598098,
+				"page": "page2"
+			},
+			"parent": "b3e23c82-53c2-4824-8b22-55498f154601"
+		},
+		"b8895acb-5f81-4fc0-bd1b-89bf26ce0d36": {
+			"id": "b8895acb-5f81-4fc0-bd1b-89bf26ce0d36",
+			"type": "StackRouter",
+			"isContainer": true,
+			"name": "stackRouter2",
+			"children": [
+				"9052e6a0-9f66-404f-a8b1-4fff6b329c80",
+				"bce4bb6c-0486-4ff4-a9ee-ce098695a1a4"
+			],
+			"isDirty": false,
+			"props": {
+				"path": "stackRouter2",
+				"x": 638.312034012839,
+				"y": -275.4367188115981,
+				"homeRoute": "stack2route1",
+				"to": "stack2route1"
+			},
+			"parent": "dbd0fcc0-3fee-460e-be32-5cb3fa961947"
+		},
+		"9052e6a0-9f66-404f-a8b1-4fff6b329c80": {
+			"id": "9052e6a0-9f66-404f-a8b1-4fff6b329c80",
+			"type": "Route",
+			"isContainer": false,
+			"name": "stack2route1",
+			"children": [],
+			"isDirty": false,
+			"props": {
+				"path": "stack2route1",
+				"x": 638.312034012839,
+				"y": -155.4367188115981,
+				"page": "page1"
+			},
+			"parent": "b8895acb-5f81-4fc0-bd1b-89bf26ce0d36"
+		},
+		"bce4bb6c-0486-4ff4-a9ee-ce098695a1a4": {
+			"id": "bce4bb6c-0486-4ff4-a9ee-ce098695a1a4",
+			"type": "StackRouter",
+			"isContainer": true,
+			"name": "stack2Router1",
+			"children": [
+				"83eaf535-d34d-4f9c-bd7d-e3eca53f9a0d"
+			],
+			"props": {
+				"path": "stack2Router1",
+				"modal": true,
+				"x": 788.312034012839,
+				"y": -155.4367188115981,
+				"homeRoute": "stack1route1",
+				"to": "stack1route1"
+			},
+			"parent": "b8895acb-5f81-4fc0-bd1b-89bf26ce0d36",
+			"isDirty": false
+		},
+		"83eaf535-d34d-4f9c-bd7d-e3eca53f9a0d": {
+			"id": "83eaf535-d34d-4f9c-bd7d-e3eca53f9a0d",
+			"type": "Route",
+			"isContainer": false,
+			"name": "stack1route1",
+			"children": [],
+			"props": {
+				"path": "stack1route1",
+				"x": 788.312034012839,
+				"y": -35.4367188115981,
+				"page": "pgRegister"
+			},
+			"parent": "bce4bb6c-0486-4ff4-a9ee-ce098695a1a4",
+			"isDirty": false
+		},
+		"fca2bd86-1038-4487-ad1e-40d36b7e78cd": {
+			"id": "fca2bd86-1038-4487-ad1e-40d36b7e78cd",
+			"type": "StackRouter",
+			"isContainer": true,
+			"name": "stackRouter3",
+			"children": [
+				"3bcb96a7-8284-4b7c-9f4c-8e5876bef8f8"
+			],
+			"isDirty": false,
+			"props": {
+				"path": "stackRouter3",
+				"x": 749.812034012839,
+				"y": -109.4367188115981,
+				"homeRoute": "route1",
+				"to": "route1"
+			},
+			"parent": "dbd0fcc0-3fee-460e-be32-5cb3fa961947"
+		},
+		"3bcb96a7-8284-4b7c-9f4c-8e5876bef8f8": {
+			"id": "3bcb96a7-8284-4b7c-9f4c-8e5876bef8f8",
+			"type": "Route",
+			"isContainer": false,
+			"name": "route1",
+			"children": [],
+			"isDirty": false,
+			"props": {
+				"path": "route1",
+				"x": 749.812034012839,
+				"y": 10.563281188401902,
+				"page": "page2"
+			},
+			"parent": "fca2bd86-1038-4487-ad1e-40d36b7e78cd"
+		},
+		"37ed47ab-bc62-40ca-a95c-852bb274ca3d": {
+			"id": "37ed47ab-bc62-40ca-a95c-852bb274ca3d",
+			"type": "Route",
+			"isContainer": false,
+			"name": "outsideRoute",
+			"children": [],
+			"isDirty": false,
+			"props": {
+				"path": "route1",
+				"x": 349.31203401283904,
+				"y": -109.9367188115981,
+				"page": "page2"
+			},
+			"parent": "appRouter"
+		},
+		"d00b41c5-5e30-4408-84ff-505cfdac4fce": {
+			"id": "d00b41c5-5e30-4408-84ff-505cfdac4fce",
+			"type": "StackRouter",
+			"isContainer": true,
+			"name": "pagesStack",
+			"children": [
+				"aa424edf-bb5c-4d33-b397-cab3ddddebad",
+				"1390d549-0b4f-4b76-aab1-e075292a6c64",
+				"c60a7cd9-9a2f-4365-9545-217301b8da1a"
+			],
+			"props": {
+				"path": "pagesStack",
+				"x": 499.31203401283904,
+				"y": -109.9367188115981,
+				"homeRoute": "page1",
+				"to": "page1"
+			},
+			"parent": "appRouter",
+			"isDirty": false
+		},
+		"aa424edf-bb5c-4d33-b397-cab3ddddebad": {
+			"id": "aa424edf-bb5c-4d33-b397-cab3ddddebad",
+			"type": "Route",
+			"isContainer": false,
+			"name": "page1",
+			"children": [],
+			"props": {
+				"path": "page1",
+				"x": 490.31203401283904,
+				"y": -87.4367188115981,
+				"page": "page1"
+			},
+			"parent": "d00b41c5-5e30-4408-84ff-505cfdac4fce",
+			"isDirty": false
+		},
+		"1390d549-0b4f-4b76-aab1-e075292a6c64": {
+			"id": "1390d549-0b4f-4b76-aab1-e075292a6c64",
+			"type": "Route",
+			"isContainer": false,
+			"name": "page2",
+			"children": [],
+			"props": {
+				"path": "page2",
+				"x": 640.312034012839,
+				"y": -87.4367188115981,
+				"page": "page2"
+			},
+			"parent": "d00b41c5-5e30-4408-84ff-505cfdac4fce",
+			"isDirty": false
+		},
+		"c60a7cd9-9a2f-4365-9545-217301b8da1a": {
+			"id": "c60a7cd9-9a2f-4365-9545-217301b8da1a",
+			"type": "StackRouter",
+			"isContainer": true,
+			"name": "page3Stack",
+			"children": [
+				"dfb7701b-eba1-4e2e-ad20-fee9f47d751a"
+			],
+			"props": {
+				"path": "page3Stack",
+>>>>>>> 7401023a0073042e9318df5b8b442def4f5f9fcd
 				"modal": true,
 				"x": 218.8173597948164,
 				"y": -436.36436521037,
@@ -158,11 +381,19 @@
 			"name": "register",
 			"children": [],
 			"props": {
+<<<<<<< HEAD
 				"path": "emptyStack",
 				"x": 490.79852618403027,
 				"y": -434.54773698387675,
 				"homeRoute": "route1",
 				"to": "route1"
+=======
+				"path": "nestedStackLibrary",
+				"x": 300.73559923451523,
+				"y": 52.29792092635074,
+				"homeRoute": "mainRoute",
+				"to": "mainRoute"
+>>>>>>> 7401023a0073042e9318df5b8b442def4f5f9fcd
 			},
 			"parent": "afa60d5c-a243-4729-9302-b21d4966fe0f",
 			"source": {
@@ -173,3 +404,4 @@
 		}
 	}
 }
+//TODO
