@@ -6,7 +6,9 @@ interface IEmptyStack {
 }
 
 const EmptyStack = (props: IEmptyStack) => {
-  return <$$EmptyStack {...props.EmptyStack} />;
+  return <$$EmptyStack customLibRouterInside={{
+    component: () => <></>
+  }} {...props.EmptyStack} />;
 };
 
 export default EmptyStack;

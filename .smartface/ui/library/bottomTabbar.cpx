@@ -8,7 +8,8 @@
 				"children": [
 					"96cb-58a1-0024-58f2",
 					"2730-b42f-f9d6-af79",
-					"cad7-b85b-5608-9c36"
+					"cad7-b85b-5608-9c36",
+					"e65a-cbc2-d433-cca9"
 				],
 				"name": "bottomTabbar",
 				"parent": "57f4-201f-4bfc-5fc6"
@@ -35,7 +36,8 @@
 					"selected": "close_icon.png"
 				},
 				"name": "tabbarItem1",
-				"parent": "9bba-1b7f-a72e-ec49"
+				"parent": "9bba-1b7f-a72e-ec49",
+				"title": "Tab 1"
 			},
 			"source": {
 				"page": "__library__"
@@ -45,7 +47,8 @@
 				"icon": {
 					"normal": "home.png",
 					"selected": "close_icon.png"
-				}
+				},
+				"title": "Tab 1"
 			}
 		},
 		{
@@ -59,7 +62,8 @@
 					"selected": "keyboardlayout_up.png"
 				},
 				"name": "tabbarItem11",
-				"parent": "9bba-1b7f-a72e-ec49"
+				"parent": "9bba-1b7f-a72e-ec49",
+				"title": "Tab 2"
 			},
 			"source": {
 				"page": "__library__"
@@ -69,7 +73,8 @@
 				"icon": {
 					"normal": "smartface.png",
 					"selected": "keyboardlayout_up.png"
-				}
+				},
+				"title": "Tab 2"
 			}
 		},
 		{
@@ -83,7 +88,8 @@
 					"selected": "keyboardlayout_down.png"
 				},
 				"name": "tabbarItem12",
-				"parent": "9bba-1b7f-a72e-ec49"
+				"parent": "9bba-1b7f-a72e-ec49",
+				"title": "Tab 3"
 			},
 			"source": {
 				"page": "__library__"
@@ -93,8 +99,28 @@
 				"icon": {
 					"normal": "arrow_back.png",
 					"selected": "keyboardlayout_down.png"
-				}
+				},
+				"title": "Tab 3"
 			}
+		},
+		{
+			"className": ".tabbarItem",
+			"id": "e65a-cbc2-d433-cca9",
+			"oldName": "tabbarItem2",
+			"props": {
+				"children": [],
+				"icon": {
+					"normal": "home.png",
+					"selected": "home.png"
+				},
+				"name": "customTabbarItem2",
+				"parent": "9bba-1b7f-a72e-ec49"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TabbarItem",
+			"userProps": {}
 		}
 	]
 }

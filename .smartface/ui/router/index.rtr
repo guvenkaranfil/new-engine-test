@@ -43,7 +43,8 @@
 			"children": [
 				"b3e23c82-53c2-4824-8b22-55498f154601",
 				"b8895acb-5f81-4fc0-bd1b-89bf26ce0d36",
-				"fca2bd86-1038-4487-ad1e-40d36b7e78cd"
+				"fca2bd86-1038-4487-ad1e-40d36b7e78cd",
+				"00a4870e-f366-46df-80f1-da16107e67d6"
 			],
 			"isDirty": false,
 			"props": {
@@ -61,7 +62,8 @@
 			"name": "stackRouter1",
 			"children": [
 				"8eb860f1-03ee-4a71-8a25-e8ed68e424f6",
-				"07f79b59-9ab1-4f1a-bb4c-b006a0045276"
+				"07f79b59-9ab1-4f1a-bb4c-b006a0045276",
+				"a85ac82c-eedc-4ccd-8076-ff50b362319c"
 			],
 			"isDirty": false,
 			"props": {
@@ -100,6 +102,20 @@
 				"x": 770.312034012839,
 				"y": -22.436718811598098,
 				"page": "page2"
+			},
+			"parent": "b3e23c82-53c2-4824-8b22-55498f154601"
+		},
+		"a85ac82c-eedc-4ccd-8076-ff50b362319c": {
+			"id": "a85ac82c-eedc-4ccd-8076-ff50b362319c",
+			"type": "CustomRouter",
+			"isContainer": false,
+			"name": "customBtb3",
+			"children": [],
+			"isDirty": false,
+			"props": {
+				"path": "customRouter1",
+				"x": 295.44538971754014,
+				"y": -64.69325223441695
 			},
 			"parent": "b3e23c82-53c2-4824-8b22-55498f154601"
 		},
@@ -203,6 +219,20 @@
 				"page": "page2"
 			},
 			"parent": "fca2bd86-1038-4487-ad1e-40d36b7e78cd"
+		},
+		"00a4870e-f366-46df-80f1-da16107e67d6": {
+			"id": "00a4870e-f366-46df-80f1-da16107e67d6",
+			"type": "CustomRouter",
+			"isContainer": false,
+			"name": "customRouter2",
+			"children": [],
+			"isDirty": false,
+			"props": {
+				"path": "customRouter1",
+				"x": 579.9135019451858,
+				"y": -232.21117755581247
+			},
+			"parent": "dbd0fcc0-3fee-460e-be32-5cb3fa961947"
 		},
 		"37ed47ab-bc62-40ca-a95c-852bb274ca3d": {
 			"id": "37ed47ab-bc62-40ca-a95c-852bb274ca3d",
@@ -331,7 +361,7 @@
 			"children": [],
 			"isDirty": false,
 			"props": {
-				"path": "customRouter1",
+				"path": "login",
 				"x": 945.4691414943636,
 				"y": -514.9540149292098
 			},

@@ -5,7 +5,8 @@
 		"isContainer": true,
 		"name": "emptyStack",
 		"children": [
-			"cba716b8-48e5-46f1-a66c-590147642687"
+			"cba716b8-48e5-46f1-a66c-590147642687",
+			"38a30bf2-b784-4a5a-9e4f-a52ad5302b46"
 		],
 		"props": {
 			"path": "emptyStack",
@@ -28,6 +29,19 @@
 			"x": 613.7595703584796,
 			"y": -133.0644170143849,
 			"page": "page1"
+		},
+		"parent": "dccddc45-b47d-42d2-be09-570625f4ca62"
+	},
+	{
+		"id": "38a30bf2-b784-4a5a-9e4f-a52ad5302b46",
+		"type": "CustomRouter",
+		"isContainer": false,
+		"name": "customLibRouterInside",
+		"children": [],
+		"props": {
+			"path": "customRouter1",
+			"x": 836.7595703584796,
+			"y": -66.0644170143849
 		},
 		"parent": "dccddc45-b47d-42d2-be09-570625f4ca62"
 	}
