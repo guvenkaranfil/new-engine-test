@@ -8,10 +8,9 @@
 				"children": [
 					"075d-1d8b-8605-fcd3",
 					"4473-4cf8-d807-5db0",
-					"564a-6753-5b9d-6190",
 					"93f8-c304-8c1f-d8c2",
 					"a31e-8028-9ec9-df01",
-					"c1c7-05e2-c337-f91e",
+					"4387-393f-7513-b013",
 					"9a31-65e3-9e39-291c",
 					"f8ff-23b2-7680-583e"
 				],
@@ -49,23 +48,6 @@
 			}
 		},
 		{
-			"className": ".view .genderComp",
-			"hiddenComponent": false,
-			"id": "564a-6753-5b9d-6190",
-			"props": {
-				"children": [],
-				"name": "genderCompMale",
-				"parent": "75bf-4d11-c702-60d6"
-			},
-			"source": {
-				"page": "__library__",
-				"type": "genderCompMale",
-				"id": "a8e7-b8d9-8e50-c873"
-			},
-			"type": "View",
-			"userProps": {}
-		},
-		{
 			"className": ".text #newPage002-text1",
 			"id": "93f8-c304-8c1f-d8c2",
 			"props": {
@@ -80,7 +62,10 @@
 			"className": ".pressable #page1-pressable2",
 			"id": "a31e-8028-9ec9-df01",
 			"props": {
-				"children": [],
+				"children": [
+					"6c81-d8b5-de2c-bd8f",
+					"6cdc-3b0c-fb73-d222"
+				],
 				"name": "pressable2",
 				"parent": "75bf-4d11-c702-60d6"
 			},
@@ -88,15 +73,72 @@
 			"userProps": {}
 		},
 		{
-			"className": ".image #newPage002-image1",
-			"id": "c1c7-05e2-c337-f91e",
+			"className": ".activityIndicator",
+			"id": "6c81-d8b5-de2c-bd8f",
 			"props": {
 				"children": [],
-				"name": "image1",
-				"parent": "75bf-4d11-c702-60d6"
+				"color": "#00a1f1",
+				"name": "activityIndicator6",
+				"parent": "a31e-8028-9ec9-df01"
 			},
-			"type": "Image",
+			"type": "ActivityIndicator",
 			"userProps": {}
+		},
+		{
+			"className": ".switch #page1-switch5",
+			"id": "6cdc-3b0c-fb73-d222",
+			"props": {
+				"children": [],
+				"name": "switch5",
+				"parent": "a31e-8028-9ec9-df01"
+			},
+			"type": "Switch",
+			"userProps": {}
+		},
+		{
+			"className": ".imageBackground #page1-imageBackground1",
+			"id": "4387-393f-7513-b013",
+			"props": {
+				"children": [
+					"b759-1245-10a4-3f49",
+					"d5c2-c3fe-2cc3-1358"
+				],
+				"name": "imageBackground1",
+				"parent": "75bf-4d11-c702-60d6",
+				"resizeMode": "stretch",
+				"source": "smartface.png"
+			},
+			"type": "ImageBackground",
+			"userProps": {
+				"resizeMode": "stretch",
+				"source": "smartface.png"
+			}
+		},
+		{
+			"className": ".activityIndicator",
+			"id": "b759-1245-10a4-3f49",
+			"props": {
+				"children": [],
+				"color": "#00a1f1",
+				"name": "activityIndicator5",
+				"parent": "4387-393f-7513-b013"
+			},
+			"type": "ActivityIndicator",
+			"userProps": {}
+		},
+		{
+			"className": ".switch #page1-switch4",
+			"id": "d5c2-c3fe-2cc3-1358",
+			"props": {
+				"children": [],
+				"name": "switch4",
+				"parent": "4387-393f-7513-b013",
+				"value": true
+			},
+			"type": "Switch",
+			"userProps": {
+				"value": true
+			}
 		},
 		{
 			"className": ".text",
@@ -117,6 +159,8 @@
 			"id": "f8ff-23b2-7680-583e",
 			"props": {
 				"children": [
+					"d19b-7f88-90f0-5657",
+					"0a22-d1d0-e54a-b8e0",
 					"77f2-166b-7254-0b3f",
 					"496f-5722-0322-9e27",
 					"f6ac-ca06-fe27-16fd",
@@ -127,6 +171,84 @@
 			},
 			"type": "Pressable",
 			"userProps": {}
+		},
+		{
+			"className": ".scrollView #page1-scrollView1",
+			"id": "d19b-7f88-90f0-5657",
+			"props": {
+				"children": [
+					"6a24-0a2f-df22-65e1",
+					"e729-3c18-b75d-2fdd",
+					"6580-8de7-b917-3b15",
+					"f945-b248-e463-1191"
+				],
+				"name": "scrollView1",
+				"parent": "f8ff-23b2-7680-583e"
+			},
+			"type": "ScrollView",
+			"userProps": {
+				"autoSizeEnabled": true
+			}
+		},
+		{
+			"className": ".switch #page1-switch2",
+			"id": "6a24-0a2f-df22-65e1",
+			"props": {
+				"children": [],
+				"name": "switch2",
+				"parent": "d19b-7f88-90f0-5657"
+			},
+			"type": "Switch",
+			"userProps": {}
+		},
+		{
+			"className": ".activityIndicator",
+			"id": "e729-3c18-b75d-2fdd",
+			"props": {
+				"children": [],
+				"color": "#00a1f1",
+				"name": "activityIndicator3",
+				"parent": "d19b-7f88-90f0-5657"
+			},
+			"type": "ActivityIndicator",
+			"userProps": {}
+		},
+		{
+			"className": ".activityIndicator",
+			"id": "6580-8de7-b917-3b15",
+			"props": {
+				"children": [],
+				"color": "#00a1f1",
+				"name": "activityIndicator4",
+				"parent": "d19b-7f88-90f0-5657"
+			},
+			"type": "ActivityIndicator",
+			"userProps": {}
+		},
+		{
+			"className": ".switch #page1-switch3",
+			"id": "f945-b248-e463-1191",
+			"props": {
+				"children": [],
+				"name": "switch3",
+				"parent": "d19b-7f88-90f0-5657"
+			},
+			"type": "Switch",
+			"userProps": {}
+		},
+		{
+			"className": ".image #page1-image1",
+			"id": "0a22-d1d0-e54a-b8e0",
+			"props": {
+				"children": [],
+				"name": "image1",
+				"parent": "f8ff-23b2-7680-583e",
+				"source": "smartface.png"
+			},
+			"type": "Image",
+			"userProps": {
+				"source": "smartface.png"
+			}
 		},
 		{
 			"className": ".textBox #newPage002-textInput1",

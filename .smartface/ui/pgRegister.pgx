@@ -14,6 +14,7 @@
 					"9741-9333-7f4b-1d36",
 					"776b-addf-fd51-1cd4",
 					"a9c2-e29f-f9a9-633e",
+					"5902-2f86-fd20-cdc1",
 					"f3e6-fdc5-b081-900d",
 					"750f-61ab-3eba-b5a8",
 					"111a-80c8-85d5-a5e1",
@@ -168,6 +169,22 @@
 			},
 			"type": "View",
 			"userProps": {}
+		},
+		{
+			"className": ".imageBackground",
+			"id": "5902-2f86-fd20-cdc1",
+			"props": {
+				"children": [],
+				"name": "imageBackground1",
+				"parent": "45a8-731d-209b-4c63",
+				"resizeMode": "contain",
+				"source": "smartface.png"
+			},
+			"type": "ImageBackground",
+			"userProps": {
+				"resizeMode": "contain",
+				"source": "smartface.png"
+			}
 		},
 		{
 			"className": ".text #pgRegister-text3 #pgRegister-text3_1",
