@@ -10,15 +10,16 @@
 			"parent": "",
 			"props": {
 				"path": "/",
-				"x": 62.312034012839035,
-				"y": -335.9367188115981,
+				"x": 440.4691414943636,
+				"y": -746.9540149292098,
 				"to": "pagesStack"
 			},
 			"children": [
 				"dbd0fcc0-3fee-460e-be32-5cb3fa961947",
 				"37ed47ab-bc62-40ca-a95c-852bb274ca3d",
 				"d00b41c5-5e30-4408-84ff-505cfdac4fce",
-				"ed75a1e7-3ef5-4cb5-8235-6f5cdba4ee5e"
+				"ed75a1e7-3ef5-4cb5-8235-6f5cdba4ee5e",
+				"e372cce4-2cdf-45ee-b279-b88473fbc203"
 			]
 		},
 		"libAppRouter": {
@@ -47,8 +48,8 @@
 			"isDirty": false,
 			"props": {
 				"path": "bottomTabBarRouter1",
-				"x": 47.403355511852794,
-				"y": -41.68997324946789,
+				"x": 82.91350194518577,
+				"y": -449.21117755581247,
 				"to": "stackRouter1"
 			},
 			"parent": "appRouter"
@@ -65,8 +66,8 @@
 			"isDirty": false,
 			"props": {
 				"path": "stackRouter1",
-				"x": 488.31203401283904,
-				"y": -275.4367188115981,
+				"x": -197.55461028245986,
+				"y": -272.69325223441695,
 				"homeRoute": "btb1",
 				"to": "btb1"
 			},
@@ -114,8 +115,8 @@
 			"isDirty": false,
 			"props": {
 				"path": "stackRouter2",
-				"x": 638.312034012839,
-				"y": -275.4367188115981,
+				"x": 32.005920455794694,
+				"y": -249.37378632837672,
 				"homeRoute": "stack2route1",
 				"to": "stack2route1"
 			},
@@ -147,8 +148,8 @@
 			"props": {
 				"path": "stack2Router1",
 				"modal": true,
-				"x": 788.312034012839,
-				"y": -155.4367188115981,
+				"x": 24.256592267876044,
+				"y": -88.2217876706588,
 				"homeRoute": "stack1route1",
 				"to": "stack1route1"
 			},
@@ -181,8 +182,8 @@
 			"isDirty": false,
 			"props": {
 				"path": "stackRouter3",
-				"x": 749.812034012839,
-				"y": -109.4367188115981,
+				"x": 215.94235147547965,
+				"y": -250.65270889567728,
 				"homeRoute": "route1",
 				"to": "route1"
 			},
@@ -230,8 +231,8 @@
 			],
 			"props": {
 				"path": "pagesStack",
-				"x": 499.31203401283904,
-				"y": -109.9367188115981,
+				"x": 370.36910488532305,
+				"y": -447.38310780488524,
 				"homeRoute": "page1",
 				"to": "page1"
 			},
@@ -279,8 +280,8 @@
 			"props": {
 				"path": "page3Stack",
 				"modal": true,
-				"x": 790.312034012839,
-				"y": -87.4367188115981,
+				"x": 412.656422411246,
+				"y": -250.65290825039563,
 				"homeRoute": "page3",
 				"to": "page3"
 			},
@@ -310,8 +311,8 @@
 			"children": [],
 			"props": {
 				"path": "nestedStackLibrary",
-				"x": 300.73559923451523,
-				"y": 52.29792092635074,
+				"x": 587.4278565499502,
+				"y": -441.52606296626453,
 				"homeRoute": "mainRoute",
 				"to": "mainRoute"
 			},
@@ -321,6 +322,20 @@
 			},
 			"isLib": true,
 			"isDirty": false
+		},
+		"e372cce4-2cdf-45ee-b279-b88473fbc203": {
+			"id": "e372cce4-2cdf-45ee-b279-b88473fbc203",
+			"type": "CustomRouter",
+			"isContainer": false,
+			"name": "customRouter1",
+			"children": [],
+			"isDirty": false,
+			"props": {
+				"path": "customRouter1",
+				"x": 945.4691414943636,
+				"y": -514.9540149292098
+			},
+			"parent": "appRouter"
 		}
 	}
 }

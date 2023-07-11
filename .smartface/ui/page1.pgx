@@ -10,7 +10,7 @@
 					"4473-4cf8-d807-5db0",
 					"93f8-c304-8c1f-d8c2",
 					"a31e-8028-9ec9-df01",
-					"4387-393f-7513-b013",
+					"efc4-78ec-4a19-b562",
 					"9a31-65e3-9e39-291c",
 					"f8ff-23b2-7680-583e"
 				],
@@ -63,8 +63,7 @@
 			"id": "a31e-8028-9ec9-df01",
 			"props": {
 				"children": [
-					"6c81-d8b5-de2c-bd8f",
-					"6cdc-3b0c-fb73-d222"
+					"6c81-d8b5-de2c-bd8f"
 				],
 				"name": "pressable2",
 				"parent": "75bf-4d11-c702-60d6"
@@ -85,60 +84,15 @@
 			"userProps": {}
 		},
 		{
-			"className": ".switch #page1-switch5",
-			"id": "6cdc-3b0c-fb73-d222",
+			"className": ".customView",
+			"id": "efc4-78ec-4a19-b562",
 			"props": {
 				"children": [],
-				"name": "switch5",
-				"parent": "a31e-8028-9ec9-df01"
+				"name": "customView1",
+				"parent": "75bf-4d11-c702-60d6"
 			},
-			"type": "Switch",
+			"type": "CustomView",
 			"userProps": {}
-		},
-		{
-			"className": ".imageBackground #page1-imageBackground1",
-			"id": "4387-393f-7513-b013",
-			"props": {
-				"children": [
-					"b759-1245-10a4-3f49",
-					"d5c2-c3fe-2cc3-1358"
-				],
-				"name": "imageBackground1",
-				"parent": "75bf-4d11-c702-60d6",
-				"resizeMode": "stretch",
-				"source": "smartface.png"
-			},
-			"type": "ImageBackground",
-			"userProps": {
-				"resizeMode": "stretch",
-				"source": "smartface.png"
-			}
-		},
-		{
-			"className": ".activityIndicator",
-			"id": "b759-1245-10a4-3f49",
-			"props": {
-				"children": [],
-				"color": "#00a1f1",
-				"name": "activityIndicator5",
-				"parent": "4387-393f-7513-b013"
-			},
-			"type": "ActivityIndicator",
-			"userProps": {}
-		},
-		{
-			"className": ".switch #page1-switch4",
-			"id": "d5c2-c3fe-2cc3-1358",
-			"props": {
-				"children": [],
-				"name": "switch4",
-				"parent": "4387-393f-7513-b013",
-				"value": true
-			},
-			"type": "Switch",
-			"userProps": {
-				"value": true
-			}
 		},
 		{
 			"className": ".text",
