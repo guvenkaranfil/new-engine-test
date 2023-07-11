@@ -13,7 +13,7 @@ export default (props: any) => {
   return (
     <Page1Design
       pressable2={{
-        onPress: () => props.navigation.navigate('login'),
+        onPress: () => props.navigation.navigate('pagesStack'),
       }}
     />
   );

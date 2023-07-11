@@ -12,14 +12,15 @@
 				"path": "/",
 				"x": 440.4691414943636,
 				"y": -746.9540149292098,
-				"to": "pagesStack"
+				"to": "bottomTabBarRouter1"
 			},
 			"children": [
 				"dbd0fcc0-3fee-460e-be32-5cb3fa961947",
 				"37ed47ab-bc62-40ca-a95c-852bb274ca3d",
 				"d00b41c5-5e30-4408-84ff-505cfdac4fce",
 				"ed75a1e7-3ef5-4cb5-8235-6f5cdba4ee5e",
-				"e372cce4-2cdf-45ee-b279-b88473fbc203"
+				"e372cce4-2cdf-45ee-b279-b88473fbc203",
+				"bee6702d-28c7-4dfe-bc9d-1eb162d85926"
 			]
 		},
 		"libAppRouter": {
@@ -264,7 +265,9 @@
 				"x": 370.36910488532305,
 				"y": -447.38310780488524,
 				"homeRoute": "page1",
-				"to": "page1"
+				"to": "page1",
+				"modalType": "modal",
+				"modalAnimation": "simple_push"
 			},
 			"parent": "appRouter",
 			"isDirty": false
@@ -364,6 +367,20 @@
 				"path": "login",
 				"x": 945.4691414943636,
 				"y": -514.9540149292098
+			},
+			"parent": "appRouter"
+		},
+		"bee6702d-28c7-4dfe-bc9d-1eb162d85926": {
+			"id": "bee6702d-28c7-4dfe-bc9d-1eb162d85926",
+			"type": "CustomRouter",
+			"isContainer": false,
+			"name": "customRouter2",
+			"children": [],
+			"isDirty": false,
+			"props": {
+				"path": "customRouter2",
+				"x": 941.4691414943636,
+				"y": -495.95401492920985
 			},
 			"parent": "appRouter"
 		}
