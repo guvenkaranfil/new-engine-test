@@ -19,8 +19,7 @@
 				"37ed47ab-bc62-40ca-a95c-852bb274ca3d",
 				"d00b41c5-5e30-4408-84ff-505cfdac4fce",
 				"ed75a1e7-3ef5-4cb5-8235-6f5cdba4ee5e",
-				"e372cce4-2cdf-45ee-b279-b88473fbc203",
-				"bee6702d-28c7-4dfe-bc9d-1eb162d85926"
+				"e372cce4-2cdf-45ee-b279-b88473fbc203"
 			]
 		},
 		"libAppRouter": {
@@ -63,8 +62,7 @@
 			"name": "stackRouter1",
 			"children": [
 				"8eb860f1-03ee-4a71-8a25-e8ed68e424f6",
-				"07f79b59-9ab1-4f1a-bb4c-b006a0045276",
-				"a85ac82c-eedc-4ccd-8076-ff50b362319c"
+				"07f79b59-9ab1-4f1a-bb4c-b006a0045276"
 			],
 			"isDirty": false,
 			"props": {
@@ -103,20 +101,6 @@
 				"x": 770.312034012839,
 				"y": -22.436718811598098,
 				"page": "page2"
-			},
-			"parent": "b3e23c82-53c2-4824-8b22-55498f154601"
-		},
-		"a85ac82c-eedc-4ccd-8076-ff50b362319c": {
-			"id": "a85ac82c-eedc-4ccd-8076-ff50b362319c",
-			"type": "CustomRouter",
-			"isContainer": false,
-			"name": "customBtb3",
-			"children": [],
-			"isDirty": false,
-			"props": {
-				"path": "customRouter1",
-				"x": 295.44538971754014,
-				"y": -64.69325223441695
 			},
 			"parent": "b3e23c82-53c2-4824-8b22-55498f154601"
 		},
@@ -267,7 +251,7 @@
 				"homeRoute": "page1",
 				"to": "page1",
 				"modalType": "modal",
-				"modalAnimation": "simple_push"
+				"modalAnimation": "flip"
 			},
 			"parent": "appRouter",
 			"isDirty": false
@@ -316,7 +300,8 @@
 				"x": 412.656422411246,
 				"y": -250.65290825039563,
 				"homeRoute": "page3",
-				"to": "page3"
+				"to": "page3",
+				"modalAnimation": "slide_from_left"
 			},
 			"parent": "d00b41c5-5e30-4408-84ff-505cfdac4fce",
 			"isDirty": false
@@ -367,20 +352,6 @@
 				"path": "login",
 				"x": 945.4691414943636,
 				"y": -514.9540149292098
-			},
-			"parent": "appRouter"
-		},
-		"bee6702d-28c7-4dfe-bc9d-1eb162d85926": {
-			"id": "bee6702d-28c7-4dfe-bc9d-1eb162d85926",
-			"type": "CustomRouter",
-			"isContainer": false,
-			"name": "customRouter2",
-			"children": [],
-			"isDirty": false,
-			"props": {
-				"path": "customRouter2",
-				"x": 941.4691414943636,
-				"y": -495.95401492920985
 			},
 			"parent": "appRouter"
 		}
